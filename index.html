@@ -4,168 +4,101 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foundation | Welcome</title>
-    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
     <script src="js/vendor/modernizr.js"></script>
+    <script>
+      var num = 600; //number of pixels before modifying styles
+
+      $(window).bind('scroll', function () {
+          if ($(window).scrollTop() > num) {
+              $('.boton').addClass('arriba');
+          } else {
+              $('.boton').removeClass('arriba');
+          }
+      });
+  </script>
   </head>
   <body>
-    
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 medium-push-2 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 medium-pull-2 columns">
-              <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>        
-          </div>
+    <header>
+      <div class="">
+        <!-- En el siguiente div es donde le doy el color de fondo y los estilos -->
+        <div>
+          <span class="display3">Revisión del proyecto</span>
         </div>
       </div>
-    </div>
-
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
-
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
-                </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>     
-
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-        <div class="panel">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
-        </div>
+    </header>
+    <section>
+      <h1 class="display1  color-deep-orange">Introducción</h1>
+      <div>
+        <p class="title  chapter-intro">Fue todo un reto sentar las bases de un proyecto que fuera a ser consistente, escalable y sobre todo rentable. Definiendo individualmente las piezas que iban a formar parte de un sistema de mercadeo por Internet.</p>
+        <p class="title  chapter-intro">Ese proyecto es RamonFanes.com, y este es el documento que le actualizará sobre lo que fue desarrollado, lo que hay por desarrollar y cómo seguir con lo planeado.</p>
       </div>
-    </div>
+      <nav class="chapter-nav">
+        <h1 class="caption  chapter-nav--headline">Contenidos</h1>
+        <ul>
+          <li>Estrategia de mercadeo</li>
+          <!-- Aquí explico muy por encima la idea global del funel de que crecimiento web, aquí hay que diferenciar la rama de las ventas de los marketplaces de libros. Nombrar la cabida que tiene lo de los cuadros en el proyecto web, como se iba a montar un marketplace para cuadros. 
+          Y resaltar como todo esto convive armónicamente con el mundo físico tradicional. Hoy la gente buscará referéncias tuyas en Internet y por eso es importante haber hecho los deberes. Crear una buena imagen de marca, cuidada transmite credibilidad y la gente confía, se retiene y se convierte.
+          Explicar en varios videos por separado todos estos conceptos.
+          Explicar el funel de crecimiento.  -->
+          <!-- Le cuento la importancia de crear una imagen de marca, y esto no se hizo, parte fundamental para que todo el proyecto, tanto en Internet y fuera de el tenga consistencia y pueda crecer. Hace falta una marca personal. 
+          Para tener presencia en Internet hace falta tener marca personal. Y esta requiere un nombre y un logo-->
+          <li>Diseños</li>
+          <!-- Aquí le muestro los varios diseños que se hiciéron del sitio web, destacando las multivistas para cada dispositivo. Tengo imágenes en mi stock para responsive. 
+           -->
+          <li>Libro electrónico</li>
+          <!-- Aquí le comparto que no hay libro electrónico como tal -->
+          <li>¿Tienes un sitio web?</li>
+          <!-- Aquí le muestro el sitio actual y el ejemplo de como quedaría cuando tenga el servicio de pagos implementado -->
+          <!-- Le cuento cómo podría tener uno -->
+          <li>Importancia del blog</li>
+          <!-- El blog tiene sentido en la fase de adquisición de usuarios dentro del funel de crecimiento del negocio.  
+          POner como ejemplo a berto, para resaltar la importancia de tener el blog y la tienda en el mismo sitio, poner como ejemplo que la exposición de un museo estubiera en calle del Carmen y la tienda del museo en paseo de gracia. Alguien podría comprar si entrar en la tienda por casualidad, pero lo que genera visitas e interés por personas segmentadas es la exposición del museo, en este caso, el blog. 
+          Explicar el paso que toma la tienda del museo cada vez que la exposición crece y recive visitas. Todo el conjunto adquiere legitimidad ante Google. Y este premia al sitio web dándole más visibilidad. Digamos que Google muve tu negocio de calle, mostrándolo en una calle peatonal de un barrio chingo, a mostratlo en una calle de tinedas en medio de barcelona.  -->
+          <li>Vender en marketplace</li>
+          <!-- Vender el libro en sitios como Amazon
+          Para eso hace falta primero el libro electrónico. -->
+          <li>Conclusión</li>
+          <!-- Lo que sí tiene y lo que no. Y como ir a por ello. Recordar que tiene marca personal RamonFanes, pero no tiene imagen.
+          Destacar el valor que le puedo aportar al proyecto. 
+          Como puedo hacer que crezca con el tiempo. 
+          La forma de vender, de comunicar cambia todo el timepo y hace falta hacer adaptaciones cíclicas. Uno no tiene la certeza absoluta de cómo van a funcionar las cosas, por eso se tiene que hacer con el mayor rigor científico. Y eso es hacer exámenes AB para medir qué diseño, que palabras, que coloers consiguen más conversiones. Hay que hacer campañas de adquisición de usuarios. 
+          Básicamente hay que iterar e iterar en el funel de crecimiento todo el tiempo. 
+          Esperar a que la gente venga a comprar no va a pasar, hay que tomar acción. 
+          Hace falta una persona que tenga conocimientos técnicos de la web, más conocimientos de márketing, que conozca estrategias de crecimiento y pueda aplicarlas. -->
+        </ul>
+      </nav>
+    </section>
+    <section>
+      <article>
+        <h2>Estrategia de mercadeo</h2>
+        <div>
+          <p>Aquí explico muy por encima la idea global del funel de que crecimiento web, aquí hay que diferenciar la rama de las ventas de los marketplaces de libros. Nombrar la cabida que tiene lo de los cuadros en el proyecto web, como se iba a montar un marketplace para cuadros. 
+          Y resaltar como todo esto convive armónicamente con el mundo físico tradicional. Hoy la gente buscará referéncias tuyas en Internet y por eso es importante haber hecho los deberes. Crear una buena imagen de marca, cuidada transmite credibilidad y la gente confía, se retiene y se convierte.
+          Explicar en varios videos por separado todos estos conceptos.
+          Explicar el funel de crecimiento. 
+          Le cuento la importancia de crear una imagen de marca, y esto no se hizo, parte fundamental para que todo el proyecto, tanto en Internet y fuera de el tenga consistencia y pueda crecer. Hace falta una marca personal. 
+          Para tener presencia en Internet hace falta tener marca personal. Y esta requiere un nombre y un logo</p>
+        </div>
+        <div>
+          <div class="media">
+            <div class="contenedor">
+              <iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/V2VToIDHWIw?showinfo=0&color=white& heme=light" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="sub-media">
+            <p>Explicación de debajo del media</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+
+
     
     <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/scrolltop.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
