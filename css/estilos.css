@@ -200,9 +200,13 @@ p {
   font-size: 24px;
 }
 .display1 {
-  font-size: 34px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 32px;
   margin-bottom: 42px;
+}
+.headline {
+  font-size: 20px;
+  line-height: 28px;
 }
 .body1 {
   letter-spacing: 0.1px;
@@ -262,31 +266,25 @@ p {
 .module .module-media .media {
   margin-bottom: 10px;
 }
-.module .module-media .media .img-container img {
-  width: 384px;
-  height: 480px;
-  transform: scale(0.4, 0.4);
-}
-.module .module-media .madia-bg {
-  background-color: #d0d0d0;
-  width: 360px;
-  height: 360px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.module .module-media--img {
-  display: inline-block;
-}
-.module .module-media--img:nth-child(even) {
-  margin-right: 35px;
-}
 @media only screen and (min-width: 760px) {
   .display3 {
     color: #fff;
     font-size: 56px;
   }
+  .display1 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+  .headline {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .grid-outer {
+    text-align: center;
+  }
   .grid-inner {
+    display: inline-block;
+    text-align: left;
     margin-top: 80px;
     margin-right: 0;
     margin-left: 0;
@@ -333,5 +331,19 @@ p {
     padding-top: 96px;
     padding-bottom: 0px;
     margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 1240px) {
+  .grid-inner {
+    width: 1160px;
+  }
+  .module .module-text {
+    width: 360px;
+    float: left;
+  }
+  .module .module-media {
+    width: 760px;
+    float: right;
+    margin-left: 40px;
   }
 }
