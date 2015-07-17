@@ -58,15 +58,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/index.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/js\/foundation.min.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -356,6 +347,22 @@
 		"importCSS": 0,
 		"inputAbbreviatedPath": "\/stylus\/bp2.styl",
 		"outputAbbreviatedPath": "\/css\/bp2.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"resolveRelativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0
+		},
+	"\/stylus\/bp3.styl": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"fileType": 8,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"importCSS": 0,
+		"inputAbbreviatedPath": "\/stylus\/bp3.styl",
+		"outputAbbreviatedPath": "\/css\/bp3.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
