@@ -2,8 +2,6 @@
 /*------------------------------------*\
     $COLORES
 \*------------------------------------*/
-.color-theme 
-	color primary-color
 
 
 
@@ -13,24 +11,28 @@
 \*------------------------------------*/
 .display3
 	color rgba(#fff,1)
-	font-size 24px
-	font-weight 300
-.body1
-	letter-spacing .1px
-
+	font-size 56px
 
 
 
 /*------------------------------------*\
     $GRID Y MÁRGENES
 \*------------------------------------*/
-.grid-outer
-	display flex
-	justify-content center
-	
+gutter = 24px
+
 .grid-inner
 	margin-top 80px
-	width 66.666%
+	margin-right 0
+	margin-left 0
+	width 760px
+	max-width 100%
+
+.grid-outer--header
+	display flex
+	justify-content center
+.grid-inner--header
+	margin-top 0
+	margin-bottom 0
 
 
 
@@ -42,42 +44,44 @@
  * ^header
  */
 .main-header
-	background-color primary-color
 	.display-outer
-		width 100%
-		margin 0 auto
-		padding 73px gutter 24px gutter 
-	
+		padding 115px 0 64px gutter 
+
 /**
- * ^introduccion ^text
+ * ^intro ^text ^nav
  */
-.chapter-intro
-	padding-bottom 40px
-			
+.intro
+	.intro-text
+		padding-bottom 50px
+		padding-right 50px
+		max-width 760px
+	.intro-nav
+		display block
+		border-left 5px solid
+		border-left-color light-color
+		padding-left 20px
+		margin-bottom 48px
+		.chapter-nav--headline
+			line-height 16px
+			padding-bottom 12px
+		.chapter-nav--list
+			padding-left 0
+			margin-top 0
+			list-style none
+			a
+				text-decoration none
+				line-height 40px
+
 /**
- * ^navegacion ^lista
+ * ^body ^module
  */
-.chapter-nav
-	border-left 5px solid
-	border-left-color primary-color
-	padding-left 20px
-	.chapter-nav--headline
-		line-height 16px
-		padding-bottom 12px
-	.chapter-nav--list
-		padding-left 0
-		margin-top 0
-		list-style none
-		a
-			text-decoration none
-			line-height 40px
+ .module
+	.headline
+		padding-top 96px	
+		padding-bottom 0px	
+		margin-bottom 30px
 		
-/**
- * ^body ^text
- */
-.body-text
-	width 560px
-		
+
 	
 
 		

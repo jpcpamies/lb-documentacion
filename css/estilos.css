@@ -87,7 +87,7 @@
 }
 .body2 {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 24px;
   color: rgba(0,0,0,0.87);
 }
@@ -200,8 +200,8 @@ p {
   font-size: 24px;
 }
 .display1 {
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 34px;
+  line-height: 40px;
   margin-bottom: 42px;
 }
 .body1 {
@@ -214,14 +214,24 @@ p {
 .grid-inner {
   margin-top: 60px;
   margin-bottom: 40px;
+  max-width: 360px;
   margin-right: 16px;
   margin-left: 16px;
+}
+.grid-outer--header {
+  display: flex;
+  justify-content: flex-start;
+}
+.grid-inner--header {
+  max-width: 360px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .main-header {
   background-color: #03a9f4;
 }
 .main-header .display-outer {
-  padding: 73px 16px 24px 16px;
+  padding: 73px 0 24px 0;
 }
 .intro .intro-text {
   padding-bottom: 50px;
@@ -252,13 +262,6 @@ p {
 .module .module-media .media {
   margin-bottom: 10px;
 }
-.module .module-media .media .img-container {
-  width: 360px;
-  height: 360px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .module .module-media .media .img-container img {
   width: 384px;
   height: 480px;
@@ -266,4 +269,69 @@ p {
 }
 .module .module-media .madia-bg {
   background-color: #d0d0d0;
+  width: 360px;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.module .module-media--img {
+  display: inline-block;
+}
+.module .module-media--img:nth-child(even) {
+  margin-right: 35px;
+}
+@media only screen and (min-width: 760px) {
+  .display3 {
+    color: #fff;
+    font-size: 56px;
+  }
+  .grid-inner {
+    margin-top: 80px;
+    margin-right: 0;
+    margin-left: 0;
+    width: 760px;
+    max-width: 100%;
+  }
+  .grid-outer--header {
+    display: flex;
+    justify-content: center;
+  }
+  .grid-inner--header {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .main-header .display-outer {
+    padding: 115px 0 64px 24px;
+  }
+  .intro .intro-text {
+    padding-bottom: 50px;
+    padding-right: 50px;
+    max-width: 760px;
+  }
+  .intro .intro-nav {
+    display: block;
+    border-left: 5px solid;
+    border-left-color: #b3e5fc;
+    padding-left: 20px;
+    margin-bottom: 48px;
+  }
+  .intro .intro-nav .chapter-nav--headline {
+    line-height: 16px;
+    padding-bottom: 12px;
+  }
+  .intro .intro-nav .chapter-nav--list {
+    padding-left: 0;
+    margin-top: 0;
+    list-style: none;
+  }
+  .intro .intro-nav .chapter-nav--list a {
+    text-decoration: none;
+    line-height: 40px;
+  }
+  .module .headline {
+    padding-top: 96px;
+    padding-bottom: 0px;
+    margin-bottom: 30px;
+  }
 }

@@ -9,8 +9,10 @@
 /*------------------------------------*\
     $COLORES
 \*------------------------------------*/
+body-color = #FAFAFA
 primary-color = #03A9F4
 secundary-color = #009688
+light-color = #B3E5FC
 media = #d0d0d0
 
 .primary-text 
@@ -74,7 +76,7 @@ divider = rgba(#000000,.12)
 	color rgba(#000000,.87)
 .body2
 	font-size 14px
-	font-weight 500
+	font-weight 400
 	line-height 24px
 	color rgba(#000000,.87)
 .body1
@@ -130,7 +132,7 @@ divider = rgba(#000000,.12)
 body
 	font-family 'Roboto', sans-serif
 	font-size 16px
-	background-color #FAFAFA
+	background-color body-color
 	margin 0
 h1, .h1
 	margin 0 
@@ -165,5 +167,6 @@ p
 \*------------------------------------*/
 /* movilxs */
 @import "bp1.styl"
-
+@media only screen and (min-width: 760px)
+	@import "bp2.styl"
 
