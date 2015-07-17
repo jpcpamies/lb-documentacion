@@ -1,0 +1,29 @@
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+/**
+ * Conseguir videos responsive
+ *
+ * Esto hace la magia usando un padding extraño que hace que el video
+ * tenga proporcion 16/9
+ */
+.video-container
+	height 0
+	overflow hidden
+	padding-bottom 56.25%
+	padding-top 30px
+	position relative
+
+/**
+ * Aquí das el soporte a los diferentes tipo de video insertado que existe
+ */
+.video-container iframe, 
+.video-container object,
+.video-container embed,
+.video-container video
+	height 100%
+	left 0
+	position: absolute
+	top 0
+	width 100%
+
