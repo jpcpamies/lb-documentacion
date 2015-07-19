@@ -53,40 +53,46 @@ gutter = 24px
 		padding 115px 0 64px gutter 
 
 /**
- * ^intro ^text ^nav
+ * ^intro ^text
  */
-.intro
-	.intro-text
-		padding-bottom 50px
-		padding-right 50px
-		max-width 760px
-	.intro-nav
-		display block
-		border-left 5px solid
-		border-left-color light-color
-		padding-left 20px
-		margin-bottom 48px
-		.chapter-nav--headline
-			line-height 16px
-			padding-bottom 12px
-		.chapter-nav--list
-			padding-left 0
-			margin-top 0
-			list-style none
-			a
-				text-decoration none
-				line-height 40px
+.chapter-intro
+	padding-right 38px
+	padding-bottom 40px
 
 /**
- * ^body ^module
+ * ^intro ^nav
  */
- .module
-	.headline
-		padding-top 96px	
-		padding-bottom 0px	
-		margin-bottom 30px
-		
+.chapter-nav
+	display block
+	border-left 5px solid
+	border-left-color light-color
+	padding-left 20px
+	margin-bottom 48px
+	.chapter-nav--headline
+		line-height 16px
+		padding-bottom 12px
+	.chapter-nav--list
+		padding-left 0
+		margin-top 0
+		list-style none
+		a
+			text-decoration none
+			line-height 40px
 
-	
+/**
+ * ^article ^module ^body
+ */
+.module-body
+	width 560px
 
+/**
+ * ^article ^module ^figure-group ^media 
+ */
+.figure-row
+	display -webkit-box
+  	display -webkit-flex
+ 	display -moz-flex
+  	display -ms-flexbox
+  	display flex
+	justify-content center
 		

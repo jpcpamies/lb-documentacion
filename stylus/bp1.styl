@@ -23,6 +23,7 @@
 	line-height 28px
 .body1
 	letter-spacing .1px
+	
 
 
 
@@ -69,50 +70,79 @@ gutter = 16px
 		padding 73px 0 24px 0 
 	
 /**
- * ^intro ^text ^nav
+ * ^intro ^text
  */
-.intro
-	.intro-text
-		padding-bottom 50px
-	.intro-nav
-		display none
+.chapter-intro
+	padding-bottom 50px
+
+/**
+ * ^intro ^nav
+ */
+.chapter-nav
+	display none
+		
+/**
+ * ^article
+ */
+.article-title
+	padding-top 15px
+	padding-bottom 12px
+
+/**
+ * ^article ^module
+ */
+.moduleA1
+	padding-bottom 40px
+
+/**
+ * ^article ^module ^body
+ */
+.module-body
+	margin-bottom 40px
+	p
+		margin-bottom 20px
+		&:last-child
+			margin-bottom 0
+
+.module-body--title
+	font-size 16px
+	line-height 24px
+	margin-bottom 30px
 	
 /**
- * ^body ^module
+ * ^article ^module ^figure-group ^media 
  */
-.module
-	border-top 1px solid divider
-	.headline
-		padding-top 15px	
-		padding-bottom 12px	
-	.module-text
-		max-width 560px
-		margin-bottom 40px
-		p
-			margin-bottom 20px
-			&:last-child
-				margin-bottom 0
-	.module-media
-		margin-bottom 40px
-		.media
-			margin-bottom 10px
-	// 		.img-container
-	// 			img
-	// 				width 384px
-	// 				height 480px
-	// 				transform scale(0.4,0.4)
-	// 	.madia-bg
-	// 		background-color media
-	// 		width 360px
-	// 		height 360px
-	// 		display flex
-	// 		justify-content center
-	// 		align-items center
-	// .module-media--img
-	// 	display inline-block
-	// 	&:nth-child(even)
-	// 		margin-right 40px
-		
+ 
+.media
+	margin-bottom 10px	
+	padding-bottom 10px
 	
+.done
+	border-bottom 15px solid green
+.notDone
+	border-bottom 15px solid rojo
 
-		
+.figure-row
+	figure
+		width 360px
+		margin 0
+		&:first-child
+			margin-bottom 40px
+			margin-right 40px
+			
+
+/**
+ * ^article ^module ^figure-group ^figcaption 
+ */
+.media-caption
+	margin-bottom 10px
+	p
+		font-size 14px
+		line-height 24px
+
+.caption-title
+	color green
+	font-size 14px
+	font-weight 500
+.caption-title--pendiente
+	color rojo

@@ -7,13 +7,52 @@
 
 
 /*------------------------------------*\
+    $TIPOGRAFÍA
+\*------------------------------------*/
+.display1
+	font-size 34px
+	line-height 40px
+.headline
+	font-size 24px
+	line-height 32px
+
+
+
+
+/*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/
-.module
-	.module-text
-		width 360px
-		float left
-	.module-media
-		width 760px
-		float right
-		margin-left 40px
+/**
+ * ^intro ^text
+ */
+.chapter-intro
+	width 960px
+	
+/**
+ * ^article
+ */
+.article-title
+	padding-top 48px
+	padding-bottom 0
+	margin-bottom 30px
+	
+/**
+ * ^article ^module 
+ *
+ * Esto permite que el media quede a la derecha 
+ * y el texto a la izq y que todo el módulo quede
+ * dentro de un blocke.
+ */
+ .moduleA1
+	display flex
+
+/**
+ * ^article ^module ^body
+ */
+.module-body
+	width 360px
+	// float left
+.figure-group
+	width 760px
+	// float right
+	margin-left 40px
