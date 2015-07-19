@@ -1,0 +1,148 @@
+
+/*------------------------------------*\
+    $COLORES
+\*------------------------------------*/
+.color-theme 
+	color primary-color
+
+
+
+
+/*------------------------------------*\
+    $TIPOGRAFÍA
+\*------------------------------------*/
+.display3
+	color rgba(#fff,1)
+	font-size 24px
+.display1
+	font-size 24px
+	line-height 32px
+	margin-bottom 42px
+.headline
+	font-size 20px
+	line-height 28px
+.body1
+	letter-spacing .1px
+	
+
+
+
+
+/*------------------------------------*\
+    $GRID Y MÁRGENES
+\*------------------------------------*/
+gutter = 16px
+
+.grid-outer
+	display flex
+	justify-content center
+	text-align center
+.grid-inner
+	display inline-block
+	text-align left
+	margin-top 60px
+	margin-bottom 40px
+	max-width 360px
+	margin-right gutter
+	margin-left gutter
+
+.grid-outer--header
+	display flex
+	justify-content flex-start
+.grid-inner--header
+	max-width 360px
+	margin-top 0
+	margin-bottom 0
+	
+
+
+
+
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+/**
+ * ^header
+ */
+.main-header
+	background-color primary-color
+	.display-outer
+		padding 73px 0 24px 0 
+	
+/**
+ * ^intro ^text
+ */
+.chapter-intro
+	padding-bottom 50px
+
+/**
+ * ^intro ^nav
+ */
+.chapter-nav
+	display none
+		
+/**
+ * ^article
+ */
+.article-title
+	padding-top 15px
+	padding-bottom 12px
+
+/**
+ * ^article ^module
+ */
+.moduleA1
+	padding-bottom 40px
+
+/**
+ * ^article ^module ^body
+ */
+.module-body
+	margin-bottom 40px
+	p
+		margin-bottom 20px
+		&:last-child
+			margin-bottom 0
+
+.module-body--title
+	font-size 16px
+	line-height 24px
+	margin-bottom 30px
+	
+/**
+ * ^article ^module ^figure-group ^media 
+ */
+ 
+.media
+	margin-bottom 10px	
+	padding-bottom 10px
+	
+.done
+	border-bottom 15px solid green
+.notDone
+	border-bottom 15px solid rojo
+
+.figure-row
+	figure
+		width 360px
+		margin 0
+		&:first-child
+			margin-bottom 40px
+			margin-right 40px
+			
+
+/**
+ * ^article ^module ^figure-group ^figcaption 
+ */
+.media-caption
+	margin-bottom 10px
+	p
+		font-size 14px
+		line-height 24px
+
+.caption-title
+	color green
+	font-size 14px
+	font-weight 500
+.caption-title--pendiente
+	color rojo
