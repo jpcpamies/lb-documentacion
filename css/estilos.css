@@ -292,7 +292,7 @@ p {
 .display1 {
   font-size: 24px;
   line-height: 32px;
-  margin-bottom: 42px;
+  margin-bottom: 0;
 }
 .headline {
   font-size: 20px;
@@ -324,27 +324,30 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+.header-home {
+  background: url("../img/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .nav {
+  background-color: #009688;
   display: table;
   width: 100%;
   padding: 16px;
-  background-color: #f00;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.8);
 }
 .logo {
   padding-right: 16px;
   display: table-cell;
-  box-sizing: border-box;
 }
-.logo figure {
-  margin: 0;
-}
-.logo figure img {
+.logo img {
   width: 60px;
   height: auto;
 }
 .contact-details {
   display: table-cell;
-  vertical-align: top;
+  vertical-align: middle;
   font-size: 14px;
 }
 .contact-details .contact-details__telf,
@@ -353,9 +356,35 @@ p {
 }
 .contact-details .contact-details__telf a {
   text-decoration: none;
+  color: #fff;
 }
 .contact-details .contact-details__telf p {
-  font-size: 0.8em;
+  color: #fff;
+}
+.header-caption {
+  padding: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.header-caption .header-caption__img {
+  display: table-cell;
+  width: 80px;
+}
+.header-caption .header-caption__text {
+  display: table-cell;
+  vertical-align: top;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.header-caption .header-caption__text .header-title {
+  color: #fff;
+}
+.header-caption .header-caption__text .header-subtitle {
+  color: #fff;
+}
+.header-caption .header-caption__text .header-subtitle span {
+  color: #fff;
+  margin-left: 16px;
 }
 .main-header {
   background-color: #00bcd4;

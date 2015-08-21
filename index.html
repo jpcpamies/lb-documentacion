@@ -1,0 +1,72 @@
+<!doctype html>
+<html class="no-js" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revisión del proyecto</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
+    <script src="js/vendor/modernizr.js"></script>
+    <script>
+      var num = 600; //number of pixels before modifying styles
+
+      $(window).bind('scroll', function () {
+          if ($(window).scrollTop() > num) {
+              $('.boton').addClass('arriba');
+          } else {
+              $('.boton').removeClass('arriba');
+          }
+      });
+  </script>
+  </head>
+  <body>
+    <header class='header-home'>
+      <div class="header-outer">
+        <div class="header-inner">
+          <nav class='nav'>
+            <div class="nav-outer">
+              <div class="nav-inner">
+                <div class="logo">
+                  <figure>
+                    <img src="img/logo-j&y.png" alt="Logo J%Y" title="Logo J%Y" width="159" height="160">
+                  </figure>
+                </div>
+                <div class="contact-details">
+                  <div class="contact-details__telf">
+                    <a class='display1' href="tel:07535086773">07535086773</a>
+                    <p class="caption">Jordi Pamies</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <div class="header-caption">
+            <!-- <div class="header-caption__img">
+              <figure class="logo-client">
+                <img src="img/logo-client.png" alt="Logo The Special Gift Company" title="Logo The Special Gift Company" width="185" height="122">
+              </figure>
+            </div> -->
+            <div class="header-caption__text">
+              <h1 class="header-title  display2">The Special Gift Company</h1>
+              <h2 class="header-subtitle  display1">Marketing plan<span class="caption">v 1.0</span></h2>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="main">
+      <div class="grid-outer">
+        <div class="grid-inner">
+          aqui va el contenido 
+        </div>
+      </div>
+    </section>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/scrolltop.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
