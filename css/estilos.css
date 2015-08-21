@@ -17,6 +17,96 @@
   top: 0;
   width: 100%;
 }
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+img {
+  max-width: 100%;
+  border-width: 0;
+  vertical-align: middle;
+  height: auto;
+}
 /*------------------------------------*    $COLORES
 \*------------------------------------*/
 .primary-text {
@@ -233,6 +323,39 @@ p {
   max-width: 360px;
   margin-top: 0;
   margin-bottom: 0;
+}
+.nav {
+  display: table;
+  width: 100%;
+  padding: 16px;
+  background-color: #f00;
+}
+.logo {
+  padding-right: 16px;
+  display: table-cell;
+  box-sizing: border-box;
+}
+.logo figure {
+  margin: 0;
+}
+.logo figure img {
+  width: 60px;
+  height: auto;
+}
+.contact-details {
+  display: table-cell;
+  vertical-align: top;
+  font-size: 14px;
+}
+.contact-details .contact-details__telf,
+.contact-details .contact-detals__email {
+  display: table-cell;
+}
+.contact-details .contact-details__telf a {
+  text-decoration: none;
+}
+.contact-details .contact-details__telf p {
+  font-size: 0.8em;
 }
 .main-header {
   background-color: #00bcd4;
