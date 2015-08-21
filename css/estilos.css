@@ -107,6 +107,32 @@ img {
   vertical-align: middle;
   height: auto;
 }
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?54rzmm");
+  src: url("../fonts/icomoon.eot?#iefix54rzmm") format('embedded-opentype'), url("../fonts/icomoon.ttf?54rzmm") format('truetype'), url("../fonts/icomoon.woff?54rzmm") format('woff'), url("../fonts/icomoon.svg?54rzmm#icomoon") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+/* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-arrow-right8:before {
+  content: "\eddb";
+}
+.icon-arrow-left8:before {
+  content: "\eddf";
+}
 /*------------------------------------*    $COLORES
 \*------------------------------------*/
 .primary-text {
@@ -282,8 +308,14 @@ p {
 /*------------------------------------*    $LAYOUT 
 \*------------------------------------*/
 /* movilxs */
-.color-theme {
+.color-subject1 {
   color: #f44336;
+}
+.color-subject2 {
+  color: #2196f3;
+}
+.color-subject3 {
+  color: #4caf50;
 }
 .display3 {
   color: #fff;
@@ -411,24 +443,116 @@ p {
   color: rgba(0,0,0,0.87);
   margin-bottom: 16px;
 }
-.footer-nav__btn {
+.footer-nav--inner a {
+  text-decoration: none;
+}
+.footer-nav__begin .footer-nav__btn--right {
   padding-top: 24px;
   padding-right: 48px;
-  padding-bottom: 32px;
+  padding-bottom: 24px;
 }
-.next {
-  background-color: #f00;
+.footer-nav__begin .next {
+  background-color: #2196f3;
   text-align: right;
 }
-.next p {
+.footer-nav__begin .next span {
+  color: rgba(0,0,0,0.87);
+  margin-right: 24px;
+}
+.footer-nav__begin .next p {
   color: #fff;
   font-size: 18px;
   line-height: 1.4em;
   font-weight: 500;
 }
-.next p:after {
-  content: '>';
+.footer-nav__begin .next p:after {
+  content: '\eddb';
+  font-family: icomoon;
   margin-left: 10px;
+}
+.footer-nav__middle {
+  position: relative;
+}
+.footer-nav__middle .footer-nav__middle--next {
+  box-sizing: border-box;
+  padding-top: 24px;
+  padding-right: 48px;
+  padding-bottom: 24px;
+  background-color: #4caf50;
+  width: 100%;
+}
+.footer-nav__middle .footer-nav__middle--next .next {
+  text-align: right;
+}
+.footer-nav__middle .footer-nav__middle--next .next span {
+  color: rgba(0,0,0,0.87);
+  margin-right: 24px;
+}
+.footer-nav__middle .footer-nav__middle--next .next p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.4em;
+  font-weight: 500;
+}
+.footer-nav__middle .footer-nav__middle--next .next p:after {
+  content: '\eddb';
+  font-family: icomoon;
+  margin-left: 10px;
+}
+.footer-nav__middle .footer-nav__middle--previous {
+  width: 40px;
+  background-color: #f44336;
+  padding-top: 42.4px;
+  padding-left: 24px;
+  padding-bottom: 24px;
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  left: 0;
+}
+.footer-nav__middle .footer-nav__middle--previous .previous {
+  text-align: left;
+}
+.footer-nav__middle .footer-nav__middle--previous .previous span {
+  display: none;
+}
+.footer-nav__middle .footer-nav__middle--previous .previous p.big {
+  display: none;
+}
+.footer-nav__middle .footer-nav__middle--previous .previous p.small {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.4em;
+  font-weight: 500;
+}
+.footer-nav__middle .footer-nav__middle--previous .previous p.small:before {
+  content: '\eddf';
+  font-family: icomoon;
+  margin-right: 10px;
+}
+.footer-nav__end .footer-nav__btn--left {
+  padding-top: 24px;
+  padding-left: 48px;
+  padding-bottom: 24px;
+}
+.footer-nav__end .previous {
+  background-color: #2196f3;
+  text-align: left;
+}
+.footer-nav__end .previous span {
+  color: rgba(0,0,0,0.87);
+  margin-left: 24px;
+}
+.footer-nav__end .previous p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.4em;
+  font-weight: 500;
+}
+.footer-nav__end .previous p:before {
+  content: '\eddf';
+  font-family: icomoon;
+  margin-right: 10px;
 }
 .module-subject__header {
   padding: 16px;
@@ -488,6 +612,15 @@ p {
 }
 .main-header .display-outer {
   padding: 73px 0 24px 0;
+}
+.main-header__subject1 {
+  background-color: #f44336;
+}
+.main-header__subject2 {
+  background-color: #2196f3;
+}
+.main-header__subject3 {
+  background-color: #4caf50;
 }
 .chapter-intro {
   padding-bottom: 50px;
