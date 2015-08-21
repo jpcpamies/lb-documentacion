@@ -78,15 +78,13 @@ gutter = 16px
 	background-size: cover;
 .nav
 	background-color home-color
-	display table
-	width 100%
 	padding gutter
 	box-shadow 0 1px 10px rgba(black,.8)
 .logo
 	padding-right gutter
 	display table-cell
 	img 
-		width 60px
+		width 50px
 		height auto
 .contact-details
 	display table-cell
@@ -118,8 +116,8 @@ gutter = 16px
 	.header-caption__text
 		display table-cell
 		vertical-align top
-		padding-left gutter
-		padding-right gutter
+		padding-left (gutter/2)
+		padding-right (gutter/2)
 		.header-title
 			color white
 		.header-subtitle
@@ -128,6 +126,43 @@ gutter = 16px
 				color white
 				margin-left gutter
 				
+
+/**
+ * ^home ^footer
+ */
+.footer-outer
+	background-color #eff2e7
+	padding-right gutter
+	padding-left gutter
+.footer-inner
+	padding-top (gutter*2)
+	padding-bottom (gutter*3)
+	text-align center
+.footer__cta
+	font-weight 500
+	color rgba(#000000,.87)
+	margin-bottom gutter
+	
+
+/**
+ * ^home ^footer-nav
+ */
+.footer-nav__btn
+	padding-top (gutter*1.5)
+	padding-right (gutter*3)
+	padding-bottom (gutter*2)
+.next
+	background-color red
+	text-align right
+	p
+		color white
+		font-size 18px
+		line-height 1.4em
+		font-weight 500
+		&:after
+			content '>'
+			margin-left 10px
+
 
 /**
  * ^home ^main ^article

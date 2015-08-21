@@ -343,9 +343,7 @@ p {
   background-size: cover;
 }
 .nav {
-  background-color: #009688;
-  display: table;
-  width: 100%;
+  background-color: #333;
   padding: 16px;
   box-shadow: 0 1px 10px rgba(0,0,0,0.8);
 }
@@ -354,7 +352,7 @@ p {
   display: table-cell;
 }
 .logo img {
-  width: 60px;
+  width: 50px;
   height: auto;
 }
 .contact-details {
@@ -385,8 +383,8 @@ p {
 .header-caption .header-caption__text {
   display: table-cell;
   vertical-align: top;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 .header-caption .header-caption__text .header-title {
   color: #fff;
@@ -397,6 +395,40 @@ p {
 .header-caption .header-caption__text .header-subtitle span {
   color: #fff;
   margin-left: 16px;
+}
+.footer-outer {
+  background-color: #eff2e7;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+.footer-inner {
+  padding-top: 32px;
+  padding-bottom: 48px;
+  text-align: center;
+}
+.footer__cta {
+  font-weight: 500;
+  color: rgba(0,0,0,0.87);
+  margin-bottom: 16px;
+}
+.footer-nav__btn {
+  padding-top: 24px;
+  padding-right: 48px;
+  padding-bottom: 32px;
+}
+.next {
+  background-color: #f00;
+  text-align: right;
+}
+.next p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.4em;
+  font-weight: 500;
+}
+.next p:after {
+  content: '>';
+  margin-left: 10px;
 }
 .module-subject__header {
   padding: 16px;
