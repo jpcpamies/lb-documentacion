@@ -283,7 +283,7 @@ p {
 \*------------------------------------*/
 /* movilxs */
 .color-theme {
-  color: #00bcd4;
+  color: #f44336;
 }
 .display3 {
   color: #fff;
@@ -324,6 +324,18 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+.main-outer {
+  margin-right: 16px;
+  margin-left: 16px;
+}
+.main-inner {
+  margin-top: 48px;
+  margin-bottom: 80px;
+}
+.main-module {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
 .header-home {
   background: url("../img/hero.jpg");
   background-repeat: no-repeat;
@@ -363,8 +375,8 @@ p {
 }
 .header-caption {
   padding: 16px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 48px;
+  padding-bottom: 96px;
 }
 .header-caption .header-caption__img {
   display: table-cell;
@@ -386,8 +398,61 @@ p {
   color: #fff;
   margin-left: 16px;
 }
+.module-subject__header {
+  padding: 16px;
+  border-radius: 10px 10px 0 0;
+}
+.module-subject__header .module-subject__title {
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  font-size: 20px;
+}
+.subject1 {
+  background-color: #f44336;
+}
+.subject2 {
+  background-color: #2196f3;
+}
+.subject3 {
+  background-color: #4caf50;
+}
+.subject-list {
+  border-right: 1px solid rgba(0,0,0,0.12);
+  border-left: 1px solid rgba(0,0,0,0.12);
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+  list-style: none;
+  border-radius: 0 0 10px 10px;
+}
+.subject-list a {
+  text-decoration: none;
+  color: rgba(0,0,0,0.74);
+}
+.subject-list .subject-item {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  border-top: 1px solid rgba(0,0,0,0.12);
+}
+.subject-list .subject-item:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(244,67,54,0.8);
+  display: inline-block;
+  margin-right: 16px;
+}
+.subject-list .subject-item:hover {
+  background-color: rgba(0,0,0,0.03);
+}
+.subject-list .subject-item2:before {
+  background-color: rgba(33,150,243,0.8);
+}
+.subject-list .subject-item3:before {
+  background-color: rgba(76,175,80,0.8);
+}
 .main-header {
-  background-color: #00bcd4;
+  background-color: #f44336;
 }
 .main-header .display-outer {
   padding: 73px 0 24px 0;

@@ -3,7 +3,7 @@
     $COLORES
 \*------------------------------------*/
 .color-theme 
-	color primary-color
+	color subject1
 
 
 
@@ -54,15 +54,22 @@ gutter = 16px
 	margin-top 0
 	margin-bottom 0
 	
-
-
+.main-outer
+	margin-right gutter
+	margin-left gutter
+.main-inner
+	margin-top (gutter*3)
+	margin-bottom (gutter*5)
+.main-module
+	margin-top (gutter*2)
+	margin-bottom (gutter*2)
 
 
 /*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/
 /**
- * ^header-home ^nav-home
+ * ^home ^header-home ^nav-home
  */
  .header-home
 	background: url(../img/hero.jpg);
@@ -70,7 +77,7 @@ gutter = 16px
 	background-position: center;
 	background-size: cover;
 .nav
-	background-color #009688
+	background-color home-color
 	display table
 	width 100%
 	padding gutter
@@ -91,19 +98,20 @@ gutter = 16px
 	.contact-details__telf
 		a
 			text-decoration none
-			// font-size 24px
+			// font-size 20px
+			// line-height 1.4em
 			color white
 		p
 			// font-size 18px
 			color white
 			
 /**
- * ^header-home ^header-caption
+ * ^home ^header-home ^header-caption
  */
 .header-caption
 	padding gutter
-	padding-top (gutter*2)
-	padding-bottom (gutter*2)
+	padding-top (gutter*3)
+	padding-bottom (gutter*6)
 	.header-caption__img
 		display table-cell
 		width 80px
@@ -119,12 +127,61 @@ gutter = 16px
 			span
 				color white
 				margin-left gutter
+				
+
+/**
+ * ^home ^main ^article
+ */
+.module-subject__header
+	padding gutter
+	border-radius 10px 10px 0 0
+	.module-subject__title
+		color white
+		text-shadow 0 1px 3px rgba(black,.3)
+		font-size 20px
+.subject1
+	background-color subject1
+.subject2
+	background-color subject2
+.subject3
+	background-color subject3
+.subject-list
+	border-right 1px solid divider
+	border-left 1px solid divider
+	border-bottom 1px solid divider
+	list-style none
+	border-radius 0 0 10px 10px
+	a
+		text-decoration none
+		color rgba(#000000,.74) 
+	.subject-item
+		padding-top (gutter)
+		padding-bottom (gutter)
+		padding-left gutter
+		border-top 1px solid divider
+		&:before
+			content ''
+			width 10px
+			height 10px
+			border-radius 50%
+			background-color rgba(subject1,.8)
+			display inline-block
+			margin-right gutter
+		&:hover
+			background-color rgba(black,.03)
+	.subject-item2
+		&:before
+			background-color rgba(subject2,.8)
+	.subject-item3
+		&:before
+			background-color rgba(subject3,.8)
+
 
 /**
  * ^header
  */
 .main-header
-	background-color primary-color
+	background-color subject1
 	.display-outer
 		padding 73px 0 24px 0 
 	
