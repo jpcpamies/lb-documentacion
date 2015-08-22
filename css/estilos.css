@@ -431,7 +431,7 @@ p {
 .footer__cta {
   font-weight: 500;
   color: rgba(0,0,0,0.87);
-  margin-bottom: 16px;
+  margin-bottom: 0.5em;
   font-size: 16px;
 }
 .footer__button a {
@@ -793,7 +793,7 @@ p {
   .footer__cta {
     font-weight: 500;
     color: rgba(0,0,0,0.87);
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     font-size: 24px;
   }
   .footer__button a {
