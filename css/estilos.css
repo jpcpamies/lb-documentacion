@@ -436,7 +436,7 @@ p {
 .footer__button a {
   color: rgba(0,0,0,0.87);
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
 }
 .footer__button a:before {
   content: '\ea34';
@@ -444,6 +444,9 @@ p {
   color: #2196f3;
   margin-right: 16px;
   vertical-align: middle;
+}
+.footer__button a:hover {
+  color: #dd2c00;
 }
 .footer-nav--inner a {
   text-decoration: none;
@@ -571,7 +574,7 @@ p {
   margin-left: 16px;
 }
 .contact a:hover {
-  color: #cddc39;
+  color: #dd2c00;
 }
 .module-subject__header {
   padding: 16px;
@@ -640,7 +643,7 @@ p {
   margin-right: 16px;
 }
 .nav-home a:hover {
-  color: #cddc39;
+  color: #dd2c00;
 }
 .main-header {
   background-color: #f44336;
@@ -730,6 +733,11 @@ p {
     margin-top: 80px;
     max-width: 100%;
   }
+  .grid-inner--middle {
+    max-width: 760px;
+    margin-right: auto;
+    margin-left: auto;
+  }
   .grid-inner--header {
     margin-top: 0;
     margin-bottom: 0;
@@ -784,8 +792,11 @@ p {
   .footer__cta {
     font-weight: 500;
     color: rgba(0,0,0,0.87);
-    margin-bottom: 24px;
+    margin-bottom: 1em;
     font-size: 24px;
+  }
+  .footer__button a {
+    font-size: 20px;
   }
 }
 @media only screen and (min-width: 1240px) {
