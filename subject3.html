@@ -7,23 +7,15 @@
     <link rel="stylesheet" href="css/estilos.css" />
     <link href='http://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
     <script src="js/vendor/modernizr.js"></script>
-    <script>
-      var num = 600; //number of pixels before modifying styles
-
-      $(window).bind('scroll', function () {
-          if ($(window).scrollTop() > num) {
-              $('.boton').addClass('arriba');
-          } else {
-              $('.boton').removeClass('arriba');
-          }
-      });
-  </script>
   </head>
   <body>
     <section class="header">
       <header>
         <div class="main-header  grid-outer--header  main-header__subject3">
           <div class="display-outer  grid-inner  grid-inner--header">
+            <nav class='nav-home'>
+              <a href="index.html"><span class="home">Home</span></a>
+            </nav>
             <span class="display3">Subject 3</span>
           </div>
         </div>
@@ -61,9 +53,6 @@
                         <div class="figure-group">
                           <div class="media done">
                             <div class="video-container">
-                              <!-- <video class='video' width='640' height='480' controls='' loop='false' preload='none' muted='' poster=''>
-                                <source src='media/movie.mp4' type='video/mp4' autoplay='false' />
-                              </video> -->
                               <iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/V2VToIDHWIw?showinfo=0&color=white& heme=light" frameborder="0" allowfullscreen></iframe>
                             </div>
                           </div>
@@ -85,11 +74,11 @@
     <div class="footer">
       <div class="footer-outer">
         <div class="footer-inner">
-          <div class="footer__cta">
+          <div class="footer__cta  prueba">
             <p>Do you want to know more or hire me?</p>
           </div>
           <div class="footer__button">
-            <button>Contact</button>
+            <a href="mailto:jordipamies2@gmail.com">jordipamies2@gmail.com</a>
           </div>
         </div>
       </div>
@@ -99,7 +88,7 @@
         <div class="footer-nav--inner">
           <div class="footer-nav__end">
             <a href="subject2.html">
-              <div class="footer-nav__btn--left  previous">
+              <div class="footer-nav__btn--left  previous  bg-subject2">
                 <span>Previous</span>
                 <p>Subject 2</p>
               </div>
@@ -111,6 +100,7 @@
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/scrolltop.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src='js/main.js'></script>
     <script>
       $(document).foundation();
     </script>
