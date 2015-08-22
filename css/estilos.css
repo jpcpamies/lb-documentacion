@@ -432,6 +432,7 @@ p {
   font-weight: 500;
   color: rgba(0,0,0,0.87);
   margin-bottom: 16px;
+  font-size: 16px;
 }
 .footer__button a {
   color: rgba(0,0,0,0.87);
@@ -570,7 +571,7 @@ p {
   content: '\e600';
   font-family: icomoon;
   color: #4caf50;
-  margin-right: 8px;
+  margin-right: 16px;
   margin-left: 16px;
 }
 .contact a:hover {
@@ -640,7 +641,7 @@ p {
 .nav-home a:before {
   content: '\e908';
   font-family: icomoon;
-  margin-right: 16px;
+  margin-right: 8px;
 }
 .nav-home a:hover {
   color: #dd2c00;
