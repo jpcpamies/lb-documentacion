@@ -75,6 +75,11 @@ gutter = 16px
 	
 .main-module
 	margin-bottom (gutter*2)
+	max-width 500px
+	margin-right auto
+	margin-left auto
+.main-intro
+	max-width 633px
 
 
 /*------------------------------------*\
@@ -83,7 +88,7 @@ gutter = 16px
 /**
  * ^home ^header-home ^nav-home
  */
- .header-home
+.header-home
 	background: url(../img/hero.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -157,7 +162,7 @@ gutter = 16px
 		text-align right
 		span
 			color rgba(#000000,.87)
-			margin-right (gutter*1.5)
+			margin-right (gutter*1.8)
 		p
 			color white
 			font-size 18px
@@ -222,7 +227,7 @@ gutter = 16px
 		text-align left
 		span
 			color rgba(#000000,.87)
-			margin-left (gutter*1.5)
+			margin-left (gutter*1.8)
 		p
 			color white
 			font-size 18px
@@ -250,7 +255,7 @@ gutter = 16px
 			&:before
 				content '\e600'
 				font-family icomoon
-				color subject3
+				color green
 				margin-right (gutter)
 				margin-left gutter
 		&:hover
@@ -300,16 +305,20 @@ gutter = 16px
 			background-color rgba(subject3,.8)
 .nav-home
 	margin-bottom gutter
+	position absolute
+	top gutter
 	a
 		text-decoration none
 		color white
 		font-size 20px
 		&:before
-			content '\e908'
+			content '\e904'
 			font-family icomoon
 			margin-right (gutter/2)
 		&:hover
 			color link-color
+	.home
+		font-size .8em
 	
 
 
@@ -318,6 +327,7 @@ gutter = 16px
  */
 .main-header
 	background-color subject1
+	position relative
 	.display-outer
 		padding 73px 0 24px 0 
 .main-header__subject1

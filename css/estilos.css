@@ -109,8 +109,8 @@ img {
 }
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?-sguwqt");
-  src: url("../fonts/icomoon.eot?#iefix-sguwqt") format('embedded-opentype'), url("../fonts/icomoon.ttf?-sguwqt") format('truetype'), url("../fonts/icomoon.woff?-sguwqt") format('woff'), url("../fonts/icomoon.svg?-sguwqt#icomoon") format('svg');
+  src: url("../fonts/icomoon.eot?6enbqg");
+  src: url("../fonts/icomoon.eot?#iefix6enbqg") format('embedded-opentype'), url("../fonts/icomoon.ttf?6enbqg") format('truetype'), url("../fonts/icomoon.woff?6enbqg") format('woff'), url("../fonts/icomoon.svg?6enbqg#icomoon") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -130,8 +130,8 @@ img {
 .icon-phone:before {
   content: "\e600";
 }
-.icon-home9:before {
-  content: "\e908";
+.icon-home5:before {
+  content: "\e904";
 }
 .icon-envelop5:before {
   content: "\ea34";
@@ -321,25 +321,25 @@ p {
   color: #808080;
 }
 .color-subject1 {
-  color: #f44336;
+  color: #009688;
 }
 .color-subject2 {
-  color: #2196f3;
+  color: #03a9f4;
 }
 .color-subject3 {
-  color: #4caf50;
+  color: #c2185b;
 }
 .bg-subject0 {
   background-color: subject0;
 }
 .bg-subject1 {
-  background-color: #f44336;
+  background-color: #009688;
 }
 .bg-subject2 {
-  background-color: #2196f3;
+  background-color: #03a9f4;
 }
 .bg-subject3 {
-  background-color: #4caf50;
+  background-color: #c2185b;
 }
 .display3 {
   color: #fff;
@@ -387,6 +387,12 @@ p {
 }
 .main-module {
   margin-bottom: 32px;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.main-intro {
+  max-width: 633px;
 }
 .header-home {
   background: url("../img/hero.jpg");
@@ -439,13 +445,13 @@ p {
 .footer__button a:before {
   content: '\ea34';
   font-family: icomoon;
-  color: #2196f3;
+  color: #03a9f4;
   margin-right: 0.5em;
   vertical-align: middle;
   font-size: 1em;
 }
 .footer__button a:hover {
-  color: #dd2c00;
+  color: #f50057;
 }
 .footer-nav--inner a {
   text-decoration: none;
@@ -460,7 +466,7 @@ p {
 }
 .footer-nav__begin .next span {
   color: rgba(0,0,0,0.87);
-  margin-right: 24px;
+  margin-right: 28.8px;
 }
 .footer-nav__begin .next p {
   color: #fff;
@@ -541,7 +547,7 @@ p {
 }
 .footer-nav__end .previous span {
   color: rgba(0,0,0,0.87);
-  margin-left: 24px;
+  margin-left: 28.8px;
 }
 .footer-nav__end .previous p {
   color: #fff;
@@ -573,7 +579,7 @@ p {
   margin-left: 16px;
 }
 .contact a:hover {
-  color: #dd2c00;
+  color: #f50057;
 }
 .module-subject__header {
   padding: 16px;
@@ -585,13 +591,13 @@ p {
   font-size: 20px;
 }
 .subject1 {
-  background-color: #f44336;
+  background-color: #009688;
 }
 .subject2 {
-  background-color: #2196f3;
+  background-color: #03a9f4;
 }
 .subject3 {
-  background-color: #4caf50;
+  background-color: #c2185b;
 }
 .subject-list {
   border-right: 1px solid rgba(0,0,0,0.12);
@@ -615,7 +621,7 @@ p {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: rgba(244,67,54,0.8);
+  background-color: rgba(0,150,136,0.8);
   display: inline-block;
   margin-right: 16px;
 }
@@ -623,13 +629,15 @@ p {
   background-color: rgba(0,0,0,0.03);
 }
 .subject-list .subject-item2:before {
-  background-color: rgba(33,150,243,0.8);
+  background-color: rgba(3,169,244,0.8);
 }
 .subject-list .subject-item3:before {
-  background-color: rgba(76,175,80,0.8);
+  background-color: rgba(194,24,91,0.8);
 }
 .nav-home {
   margin-bottom: 16px;
+  position: absolute;
+  top: 16px;
 }
 .nav-home a {
   text-decoration: none;
@@ -637,27 +645,31 @@ p {
   font-size: 20px;
 }
 .nav-home a:before {
-  content: '\e908';
+  content: '\e904';
   font-family: icomoon;
   margin-right: 8px;
 }
 .nav-home a:hover {
-  color: #dd2c00;
+  color: #f50057;
+}
+.nav-home .home {
+  font-size: 0.8em;
 }
 .main-header {
-  background-color: #f44336;
+  background-color: #009688;
+  position: relative;
 }
 .main-header .display-outer {
   padding: 73px 0 24px 0;
 }
 .main-header__subject1 {
-  background-color: #f44336;
+  background-color: #009688;
 }
 .main-header__subject2 {
-  background-color: #2196f3;
+  background-color: #03a9f4;
 }
 .main-header__subject3 {
-  background-color: #4caf50;
+  background-color: #c2185b;
 }
 .chapter-intro {
   padding-bottom: 50px;
@@ -743,6 +755,12 @@ p {
   }
   .main-header .display-outer {
     padding: 115px 0 64px 24px;
+  }
+  .header-home {
+    background: url("../img/hero@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
   .header-caption {
     padding-top: 72px;
