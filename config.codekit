@@ -47,35 +47,13 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/img\/audiolibro.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 68043,
-		"inputAbbreviatedPath": "\/img\/audiolibro.png",
-		"outputAbbreviatedPath": "\/img\/audiolibro.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/hero.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 56397,
+		"initialSize": 27488,
 		"inputAbbreviatedPath": "\/img\/hero.jpg",
 		"outputAbbreviatedPath": "\/img\/hero.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/libro.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 82228,
-		"inputAbbreviatedPath": "\/img\/libro.png",
-		"outputAbbreviatedPath": "\/img\/libro.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -87,17 +65,6 @@
 		"initialSize": 39372,
 		"inputAbbreviatedPath": "\/img\/logo-client.png",
 		"outputAbbreviatedPath": "\/img\/logo-client.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/logo-j&y.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 12921,
-		"inputAbbreviatedPath": "\/img\/logo-j&y.png",
-		"outputAbbreviatedPath": "\/img\/logo-j&y.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

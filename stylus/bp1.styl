@@ -59,6 +59,8 @@ gutter = 16px
 	text-align center
 	margin-right (gutter)
 	margin-left (gutter)
+	// position absolute
+	// z-index 3
 .grid-inner
 	display inline-block
 	text-align left
@@ -75,9 +77,9 @@ gutter = 16px
 	
 .main-module
 	margin-bottom (gutter*2)
-	max-width 500px
-	margin-right auto
-	margin-left auto
+	// max-width 500px
+	// margin-right auto
+	// margin-left auto
 .main-intro
 	max-width 633px
 
@@ -93,6 +95,25 @@ gutter = 16px
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	position relative
+.hero-layer
+	position absolute
+	top 0
+	right 0
+	bottom 0
+	left 0
+	z-index 3
+	@css {
+		background: -moz-linear-gradient(top,  rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 51%, rgba(255,255,255,1) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.8)), color-stop(51%,rgba(255,255,255,0.8)), color-stop(100%,rgba(255,255,255,1)));
+		background: -webkit-linear-gradient(top,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 51%,rgba(255,255,255,1) 100%);
+		background: -o-linear-gradient(top,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 51%,rgba(255,255,255,1) 100%);
+		background: -ms-linear-gradient(top,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 51%,rgba(255,255,255,1) 100%);
+		background: linear-gradient(to bottom,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 51%,rgba(255,255,255,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ffffff',GradientType=0 );
+
+		
+	}
 		
 
 /**
@@ -100,7 +121,7 @@ gutter = 16px
  */
 .header-caption
 	padding-top (gutter*2)
-	padding-bottom (gutter*4)
+	padding-bottom (gutter*2)
 .header-caption__img
 	display table-cell
 	width 80px
@@ -109,12 +130,17 @@ gutter = 16px
 	vertical-align top
 	padding-left (gutter/2)
 	padding-right (gutter/2)
+	position relative
+	z-index 3
 .header-title
-	color white
-.header-subtitle
-	color white
+	color rgba(#000000,.87)
+	margin-bottom .8rem
 	span
-		color white
+		color #455985
+.header-subtitle
+	color rgba(#000000,.57)
+	span
+		color rgba(#000000,.57)
 		margin-left gutter
 				
 
