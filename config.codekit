@@ -137,22 +137,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/static\/stylus\/bp1.styl": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"fileType": 8,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"importCSS": 0,
-		"inputAbbreviatedPath": "\/static\/stylus\/bp1.styl",
-		"outputAbbreviatedPath": "\/static\/css\/bp1.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"resolveRelativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0
-		},
 	"\/static\/stylus\/bp1__chapter.styl": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -185,22 +169,6 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0
 		},
-	"\/static\/stylus\/bp2.styl": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"fileType": 8,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"importCSS": 0,
-		"inputAbbreviatedPath": "\/static\/stylus\/bp2.styl",
-		"outputAbbreviatedPath": "\/static\/css\/bp2.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"resolveRelativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0
-		},
 	"\/static\/stylus\/bp2__chapter.styl": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -226,22 +194,6 @@
 		"importCSS": 0,
 		"inputAbbreviatedPath": "\/static\/stylus\/bp2__home.styl",
 		"outputAbbreviatedPath": "\/static\/css\/bp2__home.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"resolveRelativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0
-		},
-	"\/static\/stylus\/bp3.styl": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"fileType": 8,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"importCSS": 0,
-		"inputAbbreviatedPath": "\/static\/stylus\/bp3.styl",
-		"outputAbbreviatedPath": "\/static\/css\/bp3.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -360,6 +312,15 @@
 		"resolveRelativeURLS": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0
+		},
+	"\/static\/stylus\/style.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/static\/stylus\/style.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/static\/stylus\/style.styl": {
 		"createSourceMap": 0,
