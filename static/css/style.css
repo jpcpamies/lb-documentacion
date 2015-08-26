@@ -328,6 +328,7 @@ th {
 /*------------------------------------*    $MIXINS
 \*------------------------------------*/
 .test1 {
+  padding: 50px;
   background-color: #f00;
 }
 .test2 {
@@ -460,6 +461,7 @@ body {
 .home-header__title {
   position: relative;
   z-index: 5;
+  color: rgba(0,0,0,0.54);
 }
 .home-header__title span {
   color: #009688;
@@ -467,6 +469,9 @@ body {
 .home-header__subtitle {
   position: relative;
   z-index: 5;
+  font-size: 15px;
+  line-height: 1.5em;
+  font-weight: 400;
 }
 .main-outer {
   padding-top: 32px;
@@ -483,6 +488,55 @@ body {
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
+}
+.social-outer {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 32px;
+  margin-top: 30px;
+  border-bottom: 1px solid #dadada;
+}
+.avatar {
+  display: table-cell;
+  width: 60px;
+  padding-right: 16px;
+}
+.avatar img {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.contact {
+  display: table-cell;
+  position: relative;
+  top: -12px;
+}
+.contact a {
+  text-decoration: none;
+  color: #9a9a9a;
+}
+.contact .name {
+  position: relative;
+  top: -8px;
+  left: 16px;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(0,0,0,0.87);
+}
+.contact .phone:before {
+  content: '\e600';
+  font-family: icomoon;
+  color: #4caf50;
+  margin-right: 8px;
+  margin-left: 16px;
+}
+.contact .mail:before {
+  content: '\ea34';
+  font-family: icomoon;
+  color: #03a9f4;
+  margin-right: 8px;
+  margin-left: 16px;
+  vertical-align: middle;
+  font-size: 1em;
 }
 .module-table {
   margin-bottom: 30px;
@@ -693,6 +747,19 @@ body {
   .header-background {
     padding-top: 128px;
     padding-bottom: 96px;
+  }
+  .home-header__subtitle {
+    font-size: 22px;
+    line-height: 1.5em;
+    font-weight: 400;
+  }
+  .social-outer {
+    padding-top: 48px;
+  }
+  .contact {
+    display: table-cell;
+    position: relative;
+    top: -5px;
   }
   .module {
     margin-bottom: 60px;

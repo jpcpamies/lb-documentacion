@@ -105,11 +105,15 @@ body
 .home-header__title
 	position relative
 	z-index 5
+	color rgba(#000000,.54)
 	span 
 		color primaryC
 .home-header__subtitle
 	position relative
 	z-index 5
+	font-size 15px
+	line-height 1.5em
+	font-weight 400
 	
 
 		
@@ -131,6 +135,52 @@ body
 		line-height 28px
 		font-weight 400
 
+
+/**
+ * ^main ^content-table
+ */
+.social-outer
+	padding-top (gutter*2)
+	padding-bottom (gutter*2)
+	padding-left (gutter*2)
+	margin-top 30px
+	border-bottom 1px solid divider
+.avatar
+	display table-cell
+	width 60px
+	padding-right gutter	
+	img 
+		border-radius 50%
+.contact
+	display table-cell
+	position relative
+	top -12px
+	a
+		text-decoration none
+		color caption-text
+	.name
+		position relative
+		top -8px
+		left gutter
+		font-size 20px
+		font-weight 500
+		color rgba(#000000,.87)
+	.phone
+		&:before
+			content '\e600'
+			font-family icomoon
+			color #4caf50
+			margin-right (gutter/2)
+			margin-left gutter
+	.mail
+		&:before
+			content '\ea34'
+			font-family icomoon
+			color #03a9f4
+			margin-right (gutter/2)
+			margin-left gutter
+			vertical-align middle
+			font-size 1em
 
 /**
  * ^main ^content-table
