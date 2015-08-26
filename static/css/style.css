@@ -512,6 +512,26 @@ th {
 }
 /*------------------------------------*    $MIXINS
 \*------------------------------------*/
+.test1 {
+  padding: 50px;
+  background-color: #f00;
+}
+.test2 {
+  padding: 50px;
+  background-color: #008000;
+}
+.test3 {
+  padding: 50px;
+  background-color: #00f;
+}
+.test4 {
+  padding: 50px;
+  background-color: #ffa500;
+}
+.test5 {
+  padding: 50px;
+  background-color: #ffc0cb;
+}
 /*------------------------------------*    $COLORES
 \*------------------------------------*/
 .primary-text {
@@ -571,6 +591,12 @@ th {
   line-height: 24px;
   font-weight: 400;
 }
+.main .home-intro {
+  display: table;
+}
+.main .home-intro .intro-title {
+  display: table-caption;
+}
 @media only screen and (min-width: 760px) {
   .display {
     font-size: 56px;
@@ -595,6 +621,33 @@ th {
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
+  }
+  .u-wrapper {
+    width: 760px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1240px) {
+  .main .home-intro {
+    display: table;
+  }
+  .main .home-intro .intro-title {
+    display: table-cell;
+    width: 360px;
+  }
+  .main .home-intro .intro {
+    display: table-cell;
+  }
+  .main .home-content-table {
+    display: table;
+  }
+  .main .home-content-table .content-table-title {
+    display: table-cell;
+    width: 360px;
+  }
+  .u-wrapper {
+    width: 1160px;
+    margin: 0 auto;
   }
 }
 .display {
