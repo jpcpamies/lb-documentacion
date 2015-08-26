@@ -12,20 +12,26 @@
 	font-size 24px
 	line-height 1.5em
 	font-weight 400
+	margin-top 0
+	margin-bottom 0
+.subdisplay
+	font-size 15px
+	line-height 1.5em
+	font-weight 400
 .headline
 	font-size 24px
 	line-height 32px
 	font-weight 400
 	margin-bottom 42px
-.subhead
-	font-size 20px
-	line-height 32px
+.subhead2
+	font-size 16px
+	line-height 24px
 	font-weight 400
+	margin-top 20px
 .title
 	font-size 20px
 	line-height 28px
 	font-weight 400
-	margin-bottom 12px
 .title2
 	font-size 20px
 	line-height 40px
@@ -59,9 +65,221 @@
 
 
 
- /*------------------------------------*\
+
+/*------------------------------------*\
+    $UTILIDADES 
+\*------------------------------------*/
+.u-center
+	margin-right gutter
+	margin-left gutter
+
+
+
+
+/*------------------------------------*\
     $LAYOUT 
 \*------------------------------------*/
+body
+	background-color body-color
 /**
- * ^
+ * ^header
  */
+.header
+	position relative
+.header-background
+	background: url(../../img/hero.jpg)
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-top (gutter*3)
+	padding-bottom (gutter*3)
+	position relative
+.header-degrade
+	position absolute
+	top 0
+	right 0
+	bottom 0
+	left 0
+	z-index 0
+	background linear-gradient(top,  rgba(250,250,250,0.8) 0%, rgba(250,250,250,0.8) 30%, rgba(250,250,250,1) 100%);
+.home-header__title
+	position relative
+	z-index 5
+	span 
+		color primaryC
+.home-header__subtitle
+	position relative
+	z-index 5
+	
+
+		
+
+/**
+ * ^main
+ */
+.main-outer
+	padding-top (gutter*2)
+	padding-bottom (gutter*5)
+.module
+	margin-bottom 40px	
+.content-table-title
+	margin-bottom 20px
+	vertical-align top
+.intro-title
+	p
+		font-size 20px
+		line-height 28px
+		font-weight 400
+
+
+/**
+ * ^main ^content-table
+ */
+.module-table
+	margin-bottom 30px
+.module-table__header
+	padding gutter
+	border-radius 10px 10px 0 0
+	.module-table__title
+		color white
+		text-shadow 0 1px 3px rgba(black,.3)
+		font-size 20px
+.table-list
+	border-right 1px solid divider
+	border-left 1px solid divider
+	border-bottom 1px solid divider
+	list-style none
+	border-radius 0 0 10px 10px
+	a
+		text-decoration none
+		color rgba(#000000,.74) 
+	.table-item
+		padding-top (gutter)
+		padding-bottom (gutter)
+		padding-left gutter
+		border-top 1px solid divider
+		&:before
+			content ''
+			width 10px
+			height 10px
+			border-radius 50%
+			background-color rgba(primaryA ,.8)
+			display inline-block
+			margin-right gutter
+		&:hover
+			background-color rgba(black,.03)
+	.table-item2
+		&:before
+			background-color rgba(primaryB,.8)
+	.table-item3
+		&:before
+			background-color rgba(primaryC,.8)
+
+
+/**
+ * ^footer-nav
+ */
+.footer-nav--inner
+	a
+		text-decoration none
+.footer-nav__begin
+	.footer-nav__btn--right
+		padding-top (gutter*1.5)
+		padding-right (gutter*1)
+		padding-bottom (gutter*1.5)
+	.next
+		text-align right
+		span
+			color rgba(#000000,.87)
+			margin-right (gutter*1.8)
+		p
+			color white
+			font-size 18px
+			line-height 1.4em
+			font-weight 500
+			&:after
+				content '\eddb'
+				font-family icomoon
+				margin-left 10px
+.footer-nav__middle
+	position relative
+	.footer-nav__middle--next
+		box-sizing border-box
+		padding-top (gutter*1.5)
+		padding-right (gutter*3)
+		padding-bottom (gutter*1.5)
+		width 100%
+		.next
+			text-align right
+			span
+				color rgba(#000000,.87)
+				margin-right (gutter*1.8)
+			p
+				color white
+				font-size 18px
+				line-height 1.4em
+				font-weight 500
+				&:after
+					content '\eddb'
+					font-family icomoon
+					margin-left 10px
+	.footer-nav__middle--previous
+		width 40px
+		padding-top (gutter*2.65)
+		padding-left (gutter*1.5)
+		padding-bottom (gutter*1.5)
+		position absolute
+		z-index 5
+		bottom 0 
+		left 0
+		.previous
+			text-align left
+			span
+				display none
+			p.big
+				display none	
+			p.small
+				color white
+				font-size 18px
+				line-height 1.4em
+				font-weight 500
+				&:before
+					content '\eddf'
+					font-family icomoon
+					margin-right 10px
+.footer-nav__end
+	.footer-nav__btn--left
+		padding-top (gutter*1.5)
+		padding-left (gutter*3)
+		padding-bottom (gutter*1.5)
+	.previous
+		text-align left
+		span
+			color rgba(#000000,.87)
+			margin-left (gutter*1.8)
+		p
+			color white
+			font-size 18px
+			line-height 1.4em
+			font-weight 500
+			&:before
+				content '\eddf'
+				font-family icomoon
+				margin-right 10px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
