@@ -493,8 +493,10 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 32px;
+  padding-right: 32px;
   margin-top: 30px;
   border-bottom: 1px solid #dadada;
+  display: table;
 }
 .avatar {
   display: table-cell;
@@ -513,6 +515,9 @@ body {
 .contact a {
   text-decoration: none;
   color: #9a9a9a;
+  line-height: 24px;
+  display: table-row;
+  font-weight: 300;
 }
 .contact .name {
   position: relative;
