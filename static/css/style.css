@@ -528,15 +528,19 @@ th {
   background-color: #f00;
 }
 .test2 {
+  padding: 50px;
   background-color: #008000;
 }
 .test3 {
+  padding: 50px;
   background-color: #00f;
 }
 .test4 {
+  padding: 50px;
   background-color: #ffa500;
 }
 .test5 {
+  padding: 50px;
   background-color: #ffc0cb;
 }
 /*------------------------------------*    $COLORES
@@ -549,6 +553,9 @@ th {
 }
 .primaryC {
   background-color: #009688;
+}
+.white {
+  color: #fff;
 }
 .primary-text {
   color: #212121;
@@ -633,7 +640,7 @@ body {
 .header {
   position: relative;
 }
-.header-background {
+.header__background {
   background: url("../../img/hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -644,7 +651,7 @@ body {
   padding-bottom: 48px;
   position: relative;
 }
-.header-degrade {
+.header__degrade {
   position: absolute;
   top: 0;
   right: 0;
@@ -663,7 +670,7 @@ body {
   color: rgba(0,0,0,0.54);
 }
 .home-header__title span {
-  color: #455985;
+  color: #009688;
 }
 .home-header__subtitle {
   position: relative;
@@ -672,7 +679,7 @@ body {
   line-height: 1.5em;
   font-weight: 400;
 }
-.main-outer {
+.main__outer {
   padding-top: 32px;
   padding-bottom: 80px;
 }
@@ -688,16 +695,15 @@ body {
   line-height: 28px;
   font-weight: 400;
 }
-.social-outer {
+.social__outer {
   padding-top: 32px;
   padding-right: 8px;
-  padding-bottom: 16px;
 }
 .name {
   margin-bottom: 16px;
 }
 .name span {
-  color: #455985;
+  color: #009688;
 }
 .avatar {
   width: 60px;
@@ -999,7 +1005,7 @@ body {
     margin-right: 16px;
     margin-left: 16px;
   }
-  .header-background {
+  .header__background {
     padding-top: 128px;
     padding-bottom: 96px;
   }
@@ -1008,7 +1014,7 @@ body {
     line-height: 1.5em;
     font-weight: 400;
   }
-  .social-outer {
+  .social__outer {
     padding-top: 48px;
   }
   .contact {
@@ -1061,7 +1067,7 @@ body {
   }
 }
 .display1 {
-  font-size: 24px;
+  font-size: 34px;
   line-height: 1.5em;
   font-weight: 400;
 }
@@ -1076,56 +1082,28 @@ body {
   line-height: 32px;
   font-weight: 400;
 }
-.title {
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 400;
-  margin-bottom: 12px;
+.header-chapter__background {
+  background-color: #f2a433;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
-.title2 {
-  font-size: 20px;
-  line-height: 40px;
-  font-weight: 400;
+.nav-chapter {
+  position: relative;
+  top: px;
 }
-.subtitle {
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 20px;
+.nav-chapter a {
+  text-decoration: none;
 }
-.body {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-  margin-bottom: 20px;
+.nav-chapter .home {
+  font-size: 34px;
 }
-.caption {
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: 400;
+.nav-chapter .home:before {
+  content: '\e603';
+  font-family: icomoon;
+  margin-right: 8px;
 }
 @media only screen and (min-width: 760px) {
   .display1 {
     font-size: 56px;
-  }
-  .headline {
-    font-size: 34px;
-    line-height: 40px;
-    margin-bottom: 30px;
-  }
-  .title {
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 400;
-    margin-bottom: 30px;
-  }
-  .title2 {
-    font-size: 20px;
-    line-height: 40px;
-    font-weight: 400;
-  }
-  .caption {
-    font-size: 13px;
-    line-height: 24px;
-    font-weight: 400;
   }
 }
