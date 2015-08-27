@@ -32,9 +32,14 @@
  * ^header
  */
 .header-chapter__background
-	background-color primaryA
 	padding-top (gutter*3)
 	padding-bottom (gutter*1)
+.header-chapter__background--chapter1
+	background-color primaryA
+.header-chapter__background--chapter2
+	background-color primaryB
+.header-chapter__background--chapter3
+	background-color primaryC
 .nav-chapter
 	position relative
 	top -(gutter*1.5)
@@ -71,6 +76,10 @@
 	margin-bottom 48px
 	&.chapter__nav--1
 		border-left 5px solid rgba(primaryA,.5)
+	&.chapter__nav--2
+		border-left 5px solid rgba(primaryB,.5)
+	&.chapter__nav--3
+		border-left 5px solid rgba(primaryC,.5)
 	.caption__nav
 		font-size 15px
 		font-weight 400

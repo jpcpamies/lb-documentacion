@@ -120,6 +120,74 @@
 		font-weight 400
 
 
+/**
+ * ^footer-nav
+ */
+.footer-nav__middle
+	position relative
+	display table
+	width 100%
+	.footer-nav__middle--next
+		box-sizing border-box
+		// padding-top (gutter*1.5)
+		// padding-right (gutter*3)
+		// padding-bottom (gutter*1.5)
+		width 48.7%
+		display table-cell
+		.next
+			text-align right
+			span
+				color rgba(#000000,.87)
+				margin-right (gutter*1.3)
+			p
+				color white
+				font-size 18px
+				line-height 1.4em
+				font-weight 500
+				&:after
+					content '\eddb'
+					font-family icomoon
+					margin-left 10px
+	.footer-nav__middle--previous
+		width 48.7%
+		display table-cell
+		position relative
+		bottom 0px
+		padding-top (gutter*1)
+		.previous
+			text-align left
+			span
+				display block
+				color rgba(#000000,.87)
+				margin-left (gutter*1.2)
+			p.big
+				display block	
+				color white
+				font-size 18px
+				line-height 1.4em
+				font-weight 500
+				&:before
+					content '\eddf'
+					font-family icomoon
+					margin-right 10px
+			p.small
+				display none
+					
+
+		.previous
+		text-align left
+		span
+			color rgba(#000000,.87)
+			margin-left (gutter*1.5)
+		p
+			color white
+			font-size 18px
+			line-height 1.4em
+			font-weight 500
+			&:before
+				content '\eddf'
+				font-family icomoon
+				margin-right 10px
 
 
 
