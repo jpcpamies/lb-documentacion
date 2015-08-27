@@ -573,6 +573,7 @@ th {
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
+  margin-bottom: 20px;
 }
 .title2 {
   font-size: 20px;
@@ -698,6 +699,7 @@ body {
   padding: 0.7rem 2rem 0.7rem 1.2rem;
   -webkit-border-radius: 5px;
   border-radius: 5px;
+  margin-top: 16px;
 }
 .action:before {
   content: '\e604';
@@ -711,6 +713,7 @@ body {
   padding: 0.7rem 2rem 0.7rem 1.2rem;
   -webkit-border-radius: 5px;
   border-radius: 5px;
+  margin-top: 16px;
 }
 .important:before {
   content: '\f02e';
@@ -1169,6 +1172,14 @@ body {
   padding-top: 40px;
   padding-bottom: 60px;
 }
+.article__post {
+  border-bottom: 1px solid #dadada;
+  padding-bottom: 64px;
+  margin-bottom: 24px;
+}
+.article__post:last-child {
+  border-bottom: none;
+}
 .body-module {
   max-width: 560px;
 }
@@ -1219,6 +1230,7 @@ body {
   }
   .figure__small {
     display: inline-block;
+    width: 280px;
   }
   .figure__big {
     display: block;
@@ -1228,6 +1240,10 @@ body {
   }
   .chapter-main__outer {
     padding-top: 80px;
+  }
+  .article__post {
+    padding-bottom: 96px;
+    margin-bottom: 96px;
   }
 }
 @media only screen and (min-width: 1240px) {
