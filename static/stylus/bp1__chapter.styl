@@ -62,7 +62,7 @@
 
 
 /**
- * ^chapter-main
+ * ^chapter-nav
  */
 .chapter__nav
 	display block
@@ -94,25 +94,28 @@
  */
 .article-list
 	padding-top 40px
-	padding-bottom 60px
 .article__post
 	border-bottom 1px solid divider
 	padding-bottom (gutter*4)
-	margin-bottom (gutter*1.5)
 	&:last-child
 		border-bottom none
-	
+		padding-bottom 0
+.article__title
+	padding-top 30px
 .body-module
 	max-width 560px
 	&:last-child
 		margin-bottom 40px
 .article__subtitle
 	padding-top 20px
+
 	
 
 /**
  * ^article ^table
  */
+.module__figure--table
+	text-align left
 .table__item
 	list-style none
 .table__header
@@ -126,13 +129,19 @@
 	padding-top (gutter/2) 
 	padding-bottom (gutter/2) 
 .table__item
-	padding-top (gutter/2) 
-	padding-bottom (gutter/2) 
 	padding-right (gutter*2) 
 	padding-left (gutter*2) 
+	&:before
+		content '\eec6'
+		font-family icomoon
+		margin-right (gutter/2)
+		color secundary-text
 	&:nth-child(even)
 		background-color rgba(black,.05)
 		border-radius 3px
+	&:nth-child(odd)
+		padding-top (gutter/2) 
+		padding-bottom (gutter/2) 
 	a
 		text-decoration none
 		color secundary-text
@@ -141,11 +150,21 @@
 
 
 /**
- * ^article ^caption__module
+ * ^article ^figure
  */
-.caption__module
-	margin-top 30px	
-	
+.module__figure
+	text-align center
+.figure__small
+	display inline-block
+	margin-top 0
+	margin-right 0
+	margin-left 0
+	margin-bottom 60px
+	max-width 300px	
+	img
+		max-width 260px
+.caption-text
+	text-align left
 
 
 

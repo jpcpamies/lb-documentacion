@@ -18,9 +18,6 @@
 /*------------------------------------*\
     $GRID 
 \*------------------------------------*/
-.figure__small
-	display inline-block
-	width 280px
 .figure__big
 	display block
 
@@ -38,14 +35,28 @@
 	padding-right (gutter*2)
 .chapter-main__outer
 	padding-top 80px
+	padding-bottom 100px
 	
+
+
 /**
  * ^article
  */
 .article__post
 	padding-bottom (gutter*6)
-	margin-bottom (gutter*6)
+	// margin-bottom (gutter*6)
 
+
+
+/**
+ * ^article ^figure
+ */
+.module__figure
+	padding-top 40px
+.figure__small
+	margin-right 40px
+	&:nth-child(even)
+		margin-right 0
 
 
 
