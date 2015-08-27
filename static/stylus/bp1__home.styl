@@ -140,22 +140,32 @@ body
  * ^main iconography
  */
 .iconography
-	font-size 16px
+	font-size 14px
 	line-height 24px
 	font-weight 400
 	margin-top 0px
+	margin-right gutter
+	margin-bottom gutter
+	display inline-block
 .iconography__title
 	padding-bottom 20px
 .action
-	// margin-top 20px
+	background-color actionToTake
+	color actionToTake__dark
+	padding .7rem 2rem .7rem 1.2rem
+	border-radius 5px
 	&:before
 		content '\e604'
 		font-family icomoon
 		vertical-align top
 		margin-right (gutter/2)
 .important
+	background-color important
+	color important__dark
+	padding .7rem 2rem .7rem 1.2rem
+	border-radius 5px
 	&:before
-		content '\f005'
+		content '\f02e'
 		font-family icomoon
 		vertical-align top
 		margin-right (gutter/2)
