@@ -107,7 +107,7 @@ body
 	z-index 5
 	color rgba(#000000,.54)
 	span 
-		color primaryC
+		color primaryD
 .home-header__subtitle
 	position relative
 	z-index 5
@@ -137,53 +137,45 @@ body
 
 
 /**
- * ^main ^content-table
+ * ^main ^social
  */
 .social-outer
 	padding-top (gutter*2)
-	padding-bottom (gutter*2)
-	padding-left (gutter*2)
-	padding-right (gutter*2)
-	margin-top 30px
-	border-bottom 1px solid divider
-	display table
+	padding-right (gutter/2)
+	padding-bottom (gutter*1)
+.name
+	margin-bottom gutter
+	span
+		color primaryD
 .avatar
-	display table-cell
 	width 60px
-	padding-right gutter	
+	display table-cell
 	img 
 		border-radius 50%
-.contact
+.about
 	display table-cell
+	padding-left (gutter*2)
 	position relative
-	top -12px
+	top -(gutter)
 	a
 		text-decoration none
-		color caption-text
 		line-height 24px
 		display table-row
 		font-weight 300
-	.name
-		position relative
-		top -8px
-		left gutter
-		font-size 20px
-		font-weight 500
-		color rgba(#000000,.87)
+	p
+		margin-bottom gutter
 	.phone
 		&:before
 			content '\e600'
 			font-family icomoon
 			color #4caf50
 			margin-right (gutter/2)
-			margin-left gutter
 	.mail
 		&:before
 			content '\ea34'
 			font-family icomoon
 			color #03a9f4
 			margin-right (gutter/2)
-			margin-left gutter
 			vertical-align middle
 			font-size 1em
 
@@ -194,22 +186,72 @@ body
 	margin-bottom 30px
 .module-table__header
 	padding gutter
-	border-radius 10px 10px 0 0
+	border-radius 5px 5px 0 0
 	.module-table__title
 		color white
-		text-shadow 0 1px 3px rgba(black,.3)
+		// text-shadow 0 1px 5px rgba(black,.3)
 		font-size 20px
+		text-transform uppercase
+		font-weight 500
+		letter-spacing 1px
+		position relative
+		margin-left (gutter*3)
+.analize
+	background-color #442b06
+	width 35px
+	height 35px
+	border-radius 50%
+	position absolute
+	left -(gutter*3)
+	top -5px
+	&:before
+		content '\e601'
+		font-family icomoon
+		position relative
+		left 5px
+		top 8px
+.implement
+	background-color #501517
+	width 35px
+	height 35px
+	border-radius 50%
+	position absolute
+	left -(gutter*3)
+	top -5px
+	&:before
+		content '\e602'
+		font-family icomoon
+		position relative
+		left 8px
+		top 13px
+.measure
+	background-color #0d332d
+	width 35px
+	height 35px
+	border-radius 50%
+	position absolute
+	left -(gutter*3)
+	top -5px
+	&:before
+		content '\eb84'
+		font-family icomoon
+		position relative
+		font-size .9em
+		left 6px
+		top 8px
+		
 .table-list
 	border-right 1px solid divider
 	border-left 1px solid divider
 	border-bottom 1px solid divider
 	list-style none
-	border-radius 0 0 10px 10px
+	border-radius 0 0 5px 5px
 	a
 		text-decoration none
 		color rgba(#000000,.74) 
 	.table-item
 		padding-top (gutter)
+		padding-right (gutter)
 		padding-bottom (gutter)
 		padding-left gutter
 		border-top 1px solid divider
@@ -242,6 +284,7 @@ body
 		padding-top (gutter*1.5)
 		padding-right (gutter*1)
 		padding-bottom (gutter*1.5)
+		// padding-left (gutter/2)
 	.next
 		text-align right
 		span
