@@ -549,13 +549,13 @@ th {
 /*------------------------------------*    $COLORES
 \*------------------------------------*/
 .primaryA {
-  background-color: #f2a433;
+  background-color: #eea942;
 }
 .primaryB {
-  background-color: #f03336;
+  background-color: #eb3a42;
 }
 .primaryC {
-  background-color: #009688;
+  background-color: #2bae99;
 }
 .white {
   color: #fff;
@@ -673,7 +673,7 @@ body {
   color: rgba(0,0,0,0.54);
 }
 .home-header__title span {
-  color: #009688;
+  color: #2bae99;
 }
 .home-header__subtitle {
   position: relative;
@@ -711,7 +711,7 @@ body {
   margin-bottom: 16px;
 }
 .name span {
-  color: #009688;
+  color: #2bae99;
 }
 .avatar {
   width: 60px;
@@ -841,7 +841,7 @@ body {
   height: 10px;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  background-color: rgba(242,164,51,0.8);
+  background-color: rgba(238,169,66,0.8);
   display: inline-block;
   margin-right: 16px;
 }
@@ -849,10 +849,10 @@ body {
   background-color: rgba(0,0,0,0.03);
 }
 .table-list .table-item2:before {
-  background-color: rgba(240,51,54,0.8);
+  background-color: rgba(235,58,66,0.8);
 }
 .table-list .table-item3:before {
-  background-color: rgba(0,150,136,0.8);
+  background-color: rgba(43,174,153,0.8);
 }
 .footer-nav--inner a {
   text-decoration: none;
@@ -1085,7 +1085,7 @@ body {
   font-weight: 400;
 }
 .header-chapter__background {
-  background-color: #f2a433;
+  background-color: #eea942;
   padding-top: 16px;
   padding-bottom: 16px;
 }
