@@ -716,6 +716,7 @@ body {
   margin-right: 8px;
 }
 .social__outer {
+  padding-top: 40px;
   padding-right: 8px;
 }
 .name {
@@ -740,11 +741,11 @@ body {
   text-decoration: none;
   line-height: 24px;
   display: table-row;
-  font-weight: 300;
+  font-weight: 400;
 }
 .about p {
   margin-bottom: 16px;
-  font-weight: 300;
+  font-weight: 400;
 }
 .about .phone:before {
   content: '\e600';
@@ -993,7 +994,7 @@ body {
   .subhead2 {
     font-size: 20px;
     line-height: 32px;
-    font-weight: 300;
+    font-weight: 400;
     margin-top: 20px;
   }
   .title {
@@ -1034,16 +1035,28 @@ body {
     line-height: 1.5em;
     font-weight: 400;
   }
+  .subhead2 {
+    padding-right: 40px;
+  }
   .iconography {
     font-size: 20px;
     line-height: 32px;
     font-weight: 300;
     margin-top: 0px;
   }
+  .action {
+    margin-top: 0;
+  }
+  .important {
+    margin-top: 0;
+  }
   .contact {
     display: table-cell;
     position: relative;
     top: -5px;
+  }
+  .about {
+    max-width: 508px;
   }
   .module {
     margin-bottom: 30px;
