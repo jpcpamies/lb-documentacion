@@ -59,7 +59,8 @@
 \*------------------------------------*/
 .main
 	.home-intro
-		display table
+		display block
+		width 100%
 		.intro-title
 			display table-caption
 
@@ -72,6 +73,9 @@
 .u-center
 	margin-right gutter
 	margin-left gutter
+.u-bottom__border
+	border-bottom 1px solid divider
+	padding-bottom 40px
 
 
 
@@ -126,6 +130,8 @@ body
 	padding-bottom (gutter*5)
 .module
 	margin-bottom 40px	
+	&:last-child
+		margin-bottom 0	
 .content-table-title
 	margin-bottom 20px
 	vertical-align top

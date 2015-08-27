@@ -11,12 +11,11 @@
 .display1
 	font-size 34px
 	line-height 1.5em
-	font-weight 400
+	font-weight 300
 .headline
 	font-size 24px
 	line-height 32px
 	font-weight 400
-	margin-bottom 42px
 .subhead
 	font-size 20px
 	line-height 32px
@@ -34,11 +33,11 @@
  */
 .header-chapter__background
 	background-color primaryA
-	padding-top (gutter*1)
+	padding-top (gutter*3)
 	padding-bottom (gutter*1)
 .nav-chapter
 	position relative
-	top (gutter/2)
+	top -(gutter*1.5)
 	a
 		text-decoration none
 	.home
@@ -48,12 +47,45 @@
 			content '\edc2'
 			font-family icomoon
 			margin-right 5px
-	
 
 
 
+/**
+ * ^chapter-main
+ */
+.chapter-main__outer
+	padding-top 60px
+	padding-bottom 40px
+.chapter__intro
+	padding-bottom (gutter*2)
 
 
+
+/**
+ * ^chapter-main
+ */
+.chapter__nav
+	display block
+	border-left 5px solid
+	padding-left 20px
+	margin-bottom 48px
+	&.chapter__nav--1
+		border-left 5px solid rgba(primaryA,.5)
+	.caption__nav
+		font-size 15px
+		font-weight 400
+		line-height 24px
+		padding-bottom 12px
+		color caption-text
+		margin-top 0
+		margin-bottom 0
+	.chapter__nav--list
+		padding-left 0
+		margin-top 0
+		list-style none
+		a
+			text-decoration none
+			line-height 40px
 
 
 
