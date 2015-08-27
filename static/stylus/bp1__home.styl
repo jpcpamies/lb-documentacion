@@ -134,13 +134,19 @@ body
 		font-size 20px
 		line-height 28px
 		font-weight 400
+.action
+	&:before
+		content '\e604'
+		font-family icomoon
+		vertical-align top
+		margin-right (gutter/2)
 
 
 /**
  * ^main ^social
  */
 .social__outer
-	padding-top (gutter*2)
+	// padding-top (gutter*2)
 	padding-right (gutter/2)
 .name
 	margin-bottom gutter
@@ -148,14 +154,12 @@ body
 		color primaryC
 .avatar
 	width 60px
-	display table-cell
+	float left
 	img 
 		border-radius 50%
 .about
 	display table-cell
 	padding-left (gutter*2)
-	position relative
-	top -(gutter)
 	a
 		text-decoration none
 		line-height 24px
@@ -163,17 +167,18 @@ body
 		font-weight 300
 	p
 		margin-bottom gutter
+		font-weight 300
 	.phone
 		&:before
 			content '\e600'
 			font-family icomoon
-			color #4caf50
+			// color #4caf50
 			margin-right (gutter/2)
 	.mail
 		&:before
 			content '\ea34'
 			font-family icomoon
-			color #03a9f4
+			// color #03a9f4
 			margin-right (gutter/2)
 			vertical-align middle
 			font-size 1em
@@ -232,7 +237,7 @@ body
 	left -(gutter*3)
 	top -5px
 	&:before
-		content '\eb84'
+		content '\eb8f'
 		font-family icomoon
 		position relative
 		font-size .9em

@@ -460,8 +460,8 @@ th {
 }
 @font-face {
   font-family: 'icomoon';
-  src: url("../../fonts/icomoon.eot?dnl6bq");
-  src: url("../../fonts/icomoon.eot?#iefixdnl6bq") format('embedded-opentype'), url("../../fonts/icomoon.ttf?dnl6bq") format('truetype'), url("../../fonts/icomoon.woff?dnl6bq") format('woff'), url("../../fonts/icomoon.svg?dnl6bq#icomoon") format('svg');
+  src: url("../../fonts/icomoon.eot?-wtnxuh");
+  src: url("../../fonts/icomoon.eot?#iefix-wtnxuh") format('embedded-opentype'), url("../../fonts/icomoon.ttf?-wtnxuh") format('truetype'), url("../../fonts/icomoon.woff?-wtnxuh") format('woff'), url("../../fonts/icomoon.svg?-wtnxuh#icomoon") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -484,6 +484,9 @@ th {
 .icon-search:before {
   content: "\e601";
 }
+.icon-checked:before {
+  content: "\e604";
+}
 .icon-rocket:before {
   content: "\e602";
 }
@@ -493,8 +496,8 @@ th {
 .icon-envelop5:before {
   content: "\ea34";
 }
-.icon-stats-dots:before {
-  content: "\eb84";
+.icon-stats-growth2:before {
+  content: "\eb8f";
 }
 .icon-arrow-right8:before {
   content: "\eddb";
@@ -695,8 +698,13 @@ body {
   line-height: 28px;
   font-weight: 400;
 }
+.action:before {
+  content: '\e604';
+  font-family: icomoon;
+  vertical-align: top;
+  margin-right: 8px;
+}
 .social__outer {
-  padding-top: 32px;
   padding-right: 8px;
 }
 .name {
@@ -707,7 +715,7 @@ body {
 }
 .avatar {
   width: 60px;
-  display: table-cell;
+  float: left;
 }
 .avatar img {
   -webkit-border-radius: 50%;
@@ -716,8 +724,6 @@ body {
 .about {
   display: table-cell;
   padding-left: 32px;
-  position: relative;
-  top: -16px;
 }
 .about a {
   text-decoration: none;
@@ -727,17 +733,16 @@ body {
 }
 .about p {
   margin-bottom: 16px;
+  font-weight: 300;
 }
 .about .phone:before {
   content: '\e600';
   font-family: icomoon;
-  color: #4caf50;
   margin-right: 8px;
 }
 .about .mail:before {
   content: '\ea34';
   font-family: icomoon;
-  color: #03a9f4;
   margin-right: 8px;
   vertical-align: middle;
   font-size: 1em;
@@ -804,7 +809,7 @@ body {
   top: -5px;
 }
 .measure:before {
-  content: '\eb84';
+  content: '\eb8f';
   font-family: icomoon;
   position: relative;
   font-size: 0.9em;
@@ -1013,9 +1018,6 @@ body {
     font-size: 22px;
     line-height: 1.5em;
     font-weight: 400;
-  }
-  .social__outer {
-    padding-top: 48px;
   }
   .contact {
     display: table-cell;
