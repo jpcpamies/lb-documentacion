@@ -584,6 +584,12 @@ th {
   line-height: 24px;
   margin-bottom: 20px;
 }
+.subtitle2 {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
 .body {
   font-size: 14px;
   line-height: 24px;
@@ -1159,6 +1165,54 @@ body {
   text-decoration: none;
   line-height: 40px;
 }
+.article-list {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.body-module {
+  max-width: 560px;
+}
+.body-module:last-child {
+  margin-bottom: 40px;
+}
+.article__subtitle {
+  padding-top: 20px;
+}
+.table__item {
+  list-style: none;
+}
+.table__header {
+  background-color: rgba(0,0,0,0.1);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 16px;
+  padding-left: 16px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.table__list {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.table__item {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+.table__item:nth-child(even) {
+  background-color: rgba(0,0,0,0.05);
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.table__item a {
+  text-decoration: none;
+  color: #727272;
+  line-height: 30px;
+}
+.caption__module {
+  margin-top: 30px;
+}
 @media only screen and (min-width: 760px) {
   .display1 {
     font-size: 56px;
@@ -1190,6 +1244,13 @@ body {
     vertical-align: top;
   }
   .chapter__intro--body {
+    width: 768px;
+  }
+  .module__body {
+    display: block;
+    margin-right: 16px;
+  }
+  .module__figure {
     width: 768px;
   }
 }
