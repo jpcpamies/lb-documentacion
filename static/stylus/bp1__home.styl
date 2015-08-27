@@ -134,9 +134,28 @@ body
 		font-size 20px
 		line-height 28px
 		font-weight 400
+
+
+/**
+ * ^main iconography
+ */
+.iconography
+	font-size 16px
+	line-height 24px
+	font-weight 400
+	margin-top 0px
+.iconography__title
+	padding-bottom 20px
 .action
+	// margin-top 20px
 	&:before
 		content '\e604'
+		font-family icomoon
+		vertical-align top
+		margin-right (gutter/2)
+.important
+	&:before
+		content '\f005'
 		font-family icomoon
 		vertical-align top
 		margin-right (gutter/2)
@@ -212,8 +231,8 @@ body
 		content '\e601'
 		font-family icomoon
 		position relative
-		left 5px
-		top 8px
+		left 6px
+		top 7px
 .implement
 	background-color #501517
 	width 35px
@@ -227,7 +246,7 @@ body
 		font-family icomoon
 		position relative
 		left 8px
-		top 13px
+		top 11px
 .measure
 	background-color #0d332d
 	width 35px

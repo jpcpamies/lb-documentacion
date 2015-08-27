@@ -460,8 +460,8 @@ th {
 }
 @font-face {
   font-family: 'icomoon';
-  src: url("../../fonts/icomoon.eot?-wtnxuh");
-  src: url("../../fonts/icomoon.eot?#iefix-wtnxuh") format('embedded-opentype'), url("../../fonts/icomoon.ttf?-wtnxuh") format('truetype'), url("../../fonts/icomoon.woff?-wtnxuh") format('woff'), url("../../fonts/icomoon.svg?-wtnxuh#icomoon") format('svg');
+  src: url("../../fonts/icomoon.eot?11nskd");
+  src: url("../../fonts/icomoon.eot?#iefix11nskd") format('embedded-opentype'), url("../../fonts/icomoon.ttf?11nskd") format('truetype'), url("../../fonts/icomoon.woff?11nskd") format('woff'), url("../../fonts/icomoon.svg?11nskd#icomoon") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -477,6 +477,9 @@ th {
 /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.icon-star:before {
+  content: "\f005";
 }
 .icon-home:before {
   content: "\e603";
@@ -556,6 +559,12 @@ th {
 }
 .primaryC {
   background-color: #2bae99;
+}
+.star {
+  color: #ffee58;
+}
+.green {
+  color: #4caf50;
 }
 .white {
   color: #fff;
@@ -698,8 +707,23 @@ body {
   line-height: 28px;
   font-weight: 400;
 }
+.iconography {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-top: 0px;
+}
+.iconography__title {
+  padding-bottom: 20px;
+}
 .action:before {
   content: '\e604';
+  font-family: icomoon;
+  vertical-align: top;
+  margin-right: 8px;
+}
+.important:before {
+  content: '\f005';
   font-family: icomoon;
   vertical-align: top;
   margin-right: 8px;
@@ -778,8 +802,8 @@ body {
   content: '\e601';
   font-family: icomoon;
   position: relative;
-  left: 5px;
-  top: 8px;
+  left: 6px;
+  top: 7px;
 }
 .implement {
   background-color: #501517;
@@ -796,7 +820,7 @@ body {
   font-family: icomoon;
   position: relative;
   left: 8px;
-  top: 13px;
+  top: 11px;
 }
 .measure {
   background-color: #0d332d;
@@ -1018,6 +1042,12 @@ body {
     font-size: 22px;
     line-height: 1.5em;
     font-weight: 400;
+  }
+  .iconography {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 300;
+    margin-top: 0px;
   }
   .contact {
     display: table-cell;
