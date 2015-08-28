@@ -1203,6 +1203,9 @@ body {
   line-height: 32px;
   font-weight: 400;
 }
+.article__moduleB1 {
+  margin-top: 30px;
+}
 .caption__module {
   margin-top: 24px;
 }
@@ -1319,7 +1322,7 @@ body {
   padding-left: 16px;
 }
 .note__list {
-  padding-left: 48px;
+  padding-left: 32px;
 }
 .module__figure--table {
   text-align: left;
@@ -1348,7 +1351,6 @@ body {
 .table__list {
   background-color: #fff;
   padding-top: 8px;
-  padding-bottom: 8px;
   -webkit-border-radius: 0 0 5px 5px;
   border-radius: 0 0 5px 5px;
   border-bottom: 1px solid #dadada;
@@ -1358,12 +1360,6 @@ body {
 .table__item {
   padding-right: 32px;
   padding-left: 32px;
-}
-.table__item:before {
-  content: '\eec6';
-  font-family: icomoon;
-  margin-right: 8px;
-  color: #727272;
 }
 .table__item:nth-child(even) {
   padding-top: 4px;
@@ -1379,6 +1375,16 @@ body {
   color: #727272;
   line-height: 30px;
 }
+.table__item a:before {
+  content: '\eec6';
+  font-family: icomoon;
+  margin-right: 8px;
+  color: #727272;
+}
+.table__item p {
+  color: #727272;
+  line-height: 30px;
+}
 .module__figure {
   text-align: center;
 }
@@ -1387,7 +1393,7 @@ body {
   margin-top: 0;
   margin-right: 0;
   margin-left: 0;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   max-width: 300px;
 }
 .figure__small img {
@@ -1399,6 +1405,9 @@ body {
 @media only screen and (min-width: 760px) {
   .display1 {
     font-size: 56px;
+  }
+  .article__moduleA .article__title {
+    padding-top: 0;
   }
   .figure__big {
     display: block;
@@ -1425,6 +1434,7 @@ body {
   }
   .figure__small {
     margin-right: 40px;
+    margin-bottom: 0;
   }
   .figure__small:nth-child(even) {
     margin-right: 0;
@@ -1435,10 +1445,24 @@ body {
   .article__module {
     display: table;
   }
-  .module__body {
+  article__title .module__body,
+  .article__module .module__body {
     display: table-cell;
     vertical-align: top;
+  }
+  .article__moduleA .module__body {
+    width: 560px;
+  }
+  .article__moduleB .module__body {
     width: 360px;
+    padding-right: 40px;
+  }
+  .article__moduleB1 {
+    margin-top: 60px;
+  }
+  .article__moduleB1 .module__body {
+    width: 360px;
+    padding-right: 40px;
   }
   .module__figure {
     display: table-cell;
@@ -1460,5 +1484,14 @@ body {
   }
   .article__title {
     padding-top: 10px;
+  }
+  .body-module {
+    max-width: 560px;
+  }
+  .body-module:last-child {
+    margin-bottom: 0;
+  }
+  .figure__small {
+    margin-bottom: 0;
   }
 }

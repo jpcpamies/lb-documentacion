@@ -10,11 +10,21 @@ article__title
 \*------------------------------------*/
 .article__module
 	display table
-.module__body
-	display table-cell
-	vertical-align top
-	width 360px
-	
+	.module__body
+		display table-cell
+		vertical-align top
+.article__moduleA
+	.module__body
+		width 560px
+.article__moduleB
+	.module__body
+		width 360px
+		padding-right 40px
+.article__moduleB1
+	margin-top 60px
+	.module__body
+		width 360px
+		padding-right 40px
 .module__figure
 	display table-cell
 	vertical-align top
@@ -45,4 +55,14 @@ article__title
 	width 768px
 .article__title
 	padding-top 10px
+.body-module
+	max-width 560px
+	&:last-child
+		margin-bottom 0
 
+
+/**
+ * ^article ^figure
+ */
+.figure__small
+	margin-bottom 0
