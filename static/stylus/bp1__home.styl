@@ -103,7 +103,7 @@ body
 .header
 	position relative
 .header__background
-	background: url(../../img/hero.jpg)
+	background url(../../img/hero.jpg)
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -167,10 +167,12 @@ body
 	margin-top gutter
 	margin-right gutter
 	display inline-block
+	border 1px solid rgba(actionToTake__dark,.1)
 	&:before
 		content '\e604'
 		font-family icomoon
 		vertical-align top
+		font-size 20px
 		margin-right (gutter/2)
 .important
 	background-color important
@@ -179,10 +181,12 @@ body
 	border-radius 5px
 	margin-top gutter
 	display inline-block
+	border 1px solid rgba(important__dark,.1)
 	&:before
 		content '\f02e'
 		font-family icomoon
 		vertical-align top
+		font-size 18px
 		margin-right (gutter/2)
 
 
@@ -203,7 +207,7 @@ body
 		border-radius 50%
 .about
 	display table-cell
-	padding-left (gutter*2)
+	padding-left (gutter*1.5)
 	a
 		text-decoration none
 		line-height 24px
@@ -212,6 +216,8 @@ body
 	p
 		margin-bottom gutter
 		font-weight 400
+		font-size 16px
+		line-height 24px
 	.phone
 		&:before
 			content '\e600'

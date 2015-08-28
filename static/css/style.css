@@ -699,11 +699,13 @@ body {
   margin-top: 16px;
   margin-right: 16px;
   display: inline-block;
+  border: 1px solid rgba(96,66,5,0.1);
 }
 .action:before {
   content: '\e604';
   font-family: icomoon;
   vertical-align: top;
+  font-size: 20px;
   margin-right: 8px;
 }
 .important {
@@ -714,11 +716,13 @@ body {
   border-radius: 5px;
   margin-top: 16px;
   display: inline-block;
+  border: 1px solid rgba(5,63,88,0.1);
 }
 .important:before {
   content: '\f02e';
   font-family: icomoon;
   vertical-align: top;
+  font-size: 18px;
   margin-right: 8px;
 }
 .social__outer {
@@ -741,7 +745,7 @@ body {
 }
 .about {
   display: table-cell;
-  padding-left: 32px;
+  padding-left: 24px;
 }
 .about a {
   text-decoration: none;
@@ -752,6 +756,8 @@ body {
 .about p {
   margin-bottom: 16px;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 .about .phone:before {
   content: '\e600';
@@ -1314,15 +1320,23 @@ body {
   border-left: 5px solid;
   -webkit-border-radius: 3px;
   border-radius: 3px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .note-chapter1 {
   border-color: rgba(238,169,66,0.5);
+  background-color: rgba(238,169,66,0.05);
 }
 .note__body {
-  padding-left: 16px;
+  padding-left: 24px;
+  padding-right: 32px;
 }
 .note__list {
-  padding-left: 32px;
+  padding-left: 40px;
+  padding-right: 32px;
+}
+.body-text__note {
+  margin-bottom: 0;
 }
 .module__figure--table {
   text-align: left;
@@ -1362,8 +1376,8 @@ body {
   padding-left: 32px;
 }
 .table__item:nth-child(even) {
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: 5.333333333333333px;
+  padding-bottom: 5.333333333333333px;
   background-color: rgba(0,0,0,0.03);
 }
 .table__item:nth-child(odd) {
@@ -1432,6 +1446,9 @@ body {
   .article__title {
     padding-top: 0;
   }
+  .note {
+    margin-bottom: 40px;
+  }
   .figure__small {
     margin-right: 40px;
     margin-bottom: 0;
@@ -1450,19 +1467,23 @@ body {
     display: table-cell;
     vertical-align: top;
   }
-  .article__moduleA .module__body {
+  .article__moduleA .body-text {
     width: 560px;
   }
   .article__moduleB .module__body {
-    width: 360px;
     padding-right: 40px;
+  }
+  .article__moduleB .body-text {
+    width: 360px;
   }
   .article__moduleB1 {
     margin-top: 60px;
   }
   .article__moduleB1 .module__body {
-    width: 360px;
     padding-right: 40px;
+  }
+  .article__moduleB1 .body-text {
+    width: 360px;
   }
   .module__figure {
     display: table-cell;
@@ -1489,6 +1510,9 @@ body {
     max-width: 560px;
   }
   .body-module:last-child {
+    margin-bottom: 0;
+  }
+  .note {
     margin-bottom: 0;
   }
   .figure__small {
