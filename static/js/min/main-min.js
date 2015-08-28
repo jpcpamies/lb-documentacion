@@ -1,0 +1,1 @@
+var num=600;$(window).bind("scroll",function(){$(window).scrollTop()>num?$(".boton").addClass("arriba"):$(".boton").removeClass("arriba")});

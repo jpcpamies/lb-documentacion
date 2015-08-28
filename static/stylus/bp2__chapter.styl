@@ -28,6 +28,9 @@
 /*------------------------------------*\
     $LAYOUT 
 \*------------------------------------*/
+.caption__module
+	margin-top (gutter*2)
+
 /**
  * ^chapter-main
  */
@@ -40,19 +43,27 @@
 
 
 /**
+ * ^chapter-nav
+ */
+.chapter__nav
+	margin-bottom 0
+	
+
+
+/**
  * ^article
  */
 .article__post
-	padding-bottom (gutter*6)
-	// margin-bottom (gutter*6)
+	padding-top 80px
+	padding-bottom 80px
+.article__title
+	padding-top 0
 
 
 
 /**
  * ^article ^figure
  */
-.module__figure
-	padding-top 40px
 .figure__small
 	margin-right 40px
 	&:nth-child(even)
