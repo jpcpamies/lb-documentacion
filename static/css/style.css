@@ -692,14 +692,16 @@ body {
 }
 .action {
   background-color: #ffe57f;
-  color: #604205;
-  padding: 0.7rem 2rem 0.7rem 1.2rem;
+  border: 1px solid rgba(96,66,5,0.1);
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  margin-top: 16px;
-  margin-right: 16px;
+  color: #604205;
   display: inline-block;
-  border: 1px solid rgba(96,66,5,0.1);
+  font-size: 14px;
+  line-height: 24px;
+  margin-right: 16px;
+  margin-top: 16px;
+  padding: 0.7rem 2rem 0.7rem 1.2rem;
 }
 .action:before {
   content: '\e604';
@@ -710,13 +712,15 @@ body {
 }
 .important {
   background-color: #90d2ef;
-  color: #053f58;
-  padding: 0.7rem 2rem 0.7rem 1.2rem;
+  border: 1px solid rgba(5,63,88,0.1);
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  margin-top: 16px;
+  color: #053f58;
   display: inline-block;
-  border: 1px solid rgba(5,63,88,0.1);
+  margin-top: 16px;
+  padding: 0.7rem 2rem 0.7rem 1.2rem;
+  line-height: 24px;
+  font-size: 14px;
 }
 .important:before {
   content: '\f02e';
@@ -1060,7 +1064,7 @@ body {
     margin-top: 0;
   }
   .important {
-    margin-top: 0;
+    margin-top: 24px;
   }
   .contact {
     display: table-cell;
@@ -1313,15 +1317,13 @@ body {
 .body-module:last-child {
   margin-bottom: 40px;
 }
-.article__subtitle {
-  padding-top: 20px;
-}
 .note {
   border-left: 5px solid;
   -webkit-border-radius: 3px;
   border-radius: 3px;
   padding-top: 16px;
   padding-bottom: 16px;
+  margin-bottom: 30px;
 }
 .note-chapter1 {
   border-color: rgba(238,169,66,0.5);
@@ -1340,9 +1342,6 @@ body {
 }
 .module__figure--table {
   text-align: left;
-}
-.table__item {
-  list-style: none;
 }
 .table__header {
   background-color: #fbfbfb;
@@ -1363,6 +1362,7 @@ body {
   color: #727272;
 }
 .table__list {
+  list-style: none;
   background-color: #fff;
   padding-top: 8px;
   -webkit-border-radius: 0 0 5px 5px;
@@ -1380,9 +1380,15 @@ body {
   padding-bottom: 5.333333333333333px;
   background-color: rgba(0,0,0,0.03);
 }
+.table__item:nth-child(even):last-child {
+  padding-bottom: 16px;
+}
 .table__item:nth-child(odd) {
   padding-top: 8px;
   padding-bottom: 8px;
+}
+.table__item:nth-child(odd):last-child {
+  padding-bottom: 16px;
 }
 .table__item a {
   text-decoration: none;

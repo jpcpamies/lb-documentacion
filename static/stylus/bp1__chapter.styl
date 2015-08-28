@@ -135,8 +135,6 @@
 	max-width 560px
 	&:last-child
 		margin-bottom 40px
-.article__subtitle
-	padding-top 20px
 
 
 
@@ -148,6 +146,7 @@
 	border-radius 3px
 	padding-top gutter
 	padding-bottom gutter
+	margin-bottom 30px
 .note-chapter1
 	border-color rgba(primaryA,.5)
 	background-color rgba(primaryA,.05)
@@ -168,8 +167,6 @@
  */
 .module__figure--table
 	text-align left
-.table__item
-	list-style none
 .table__header
 	background-color #fbfbfb
 	padding-top (gutter*2.5) 
@@ -186,6 +183,7 @@
 	font-weight 300
 	color secundary-text
 .table__list
+	list-style none
 	background-color white
 	padding-top (gutter/2) 
 	// padding-bottom (gutter/2) 
@@ -200,9 +198,13 @@
 		padding-top (gutter/3) 
 		padding-bottom (gutter/3)
 		background-color rgba(black,.03)
+		&:last-child
+			padding-bottom gutter
 	&:nth-child(odd)
 		padding-top (gutter/2) 
 		padding-bottom (gutter/2) 
+		&:last-child
+			padding-bottom gutter
 	a
 		text-decoration none
 		color secundary-text
