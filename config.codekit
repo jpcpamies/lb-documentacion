@@ -82,6 +82,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/static\/css\/icomoon.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/static\/css\/icomoon.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/static\/css\/normalize.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -320,7 +329,7 @@
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"fileType": 8,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"importCSS": 0,
 		"inputAbbreviatedPath": "\/static\/stylus\/icomoon.styl",
@@ -363,15 +372,6 @@
 		"resolveRelativeURLS": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0
-		},
-	"\/static\/stylus\/style.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/static\/stylus\/style.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/static\/stylus\/style.styl": {
 		"createSourceMap": 0,
