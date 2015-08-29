@@ -84,11 +84,42 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/trend-regional-2015.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11464,
+		"inputAbbreviatedPath": "\/img\/trend-regional-2015.jpg",
+		"outputAbbreviatedPath": "\/img\/trend-regional-2015.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/trend-regional-2015.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 112692,
+		"inputAbbreviatedPath": "\/img\/trend-regional-2015.png",
+		"outputAbbreviatedPath": "\/img\/trend-regional-2015.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/module-index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/module-index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -383,15 +414,6 @@
 		"resolveRelativeURLS": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0
-		},
-	"\/static\/stylus\/style.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/static\/stylus\/style.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/static\/stylus\/style.styl": {
 		"createSourceMap": 0,

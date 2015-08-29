@@ -159,6 +159,8 @@ body
  */
 .iconography__title
 	padding-bottom 20px
+.iconography__module
+	text-align left
 .action
 	background-color actionToTake
 	border 1px solid rgba(actionToTake__dark,.1)
@@ -183,11 +185,28 @@ body
 	color important__dark
 	display inline-block
 	margin-top gutter
+	margin-right gutter
 	padding .7rem 2rem .7rem 1.2rem
 	line-height 24px
 	font-size 14px
 	&:before
 		content '\f02e'
+		font-family icomoon
+		vertical-align top
+		font-size 18px
+		margin-right (gutter/2)
+.alert
+	background-color red
+	border 1px solid rgba(alert__dark,.1)
+	border-radius 5px
+	color alert__dark
+	display inline-block
+	margin-top gutter
+	padding .7rem 2rem .7rem 1.2rem
+	line-height 24px
+	font-size 14px
+	&:before
+		content '\f071'
 		font-family icomoon
 		vertical-align top
 		font-size 18px
