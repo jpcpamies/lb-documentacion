@@ -1269,6 +1269,9 @@ body {
 .article__moduleB1 {
   margin-top: 30px;
 }
+.chapter-main {
+  background-color: redwhitenote;
+}
 .caption__module {
   margin-top: 24px;
 }
@@ -1380,7 +1383,7 @@ body {
 }
 .note-chapter1 {
   border-color: rgba(238,169,66,0.5);
-  background-color: rgba(238,169,66,0.05);
+  background-color: rgba(238,169,66,0.1);
 }
 .note__body {
   padding-left: 24px;
@@ -1392,6 +1395,11 @@ body {
 }
 .body-text__note {
   margin-bottom: 0;
+}
+.note__img {
+  padding: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .module__figure--table {
   text-align: left;
@@ -1507,6 +1515,10 @@ body {
   }
   .note {
     margin-bottom: 40px;
+  }
+  .note__img {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
   .figure__small {
     margin-right: 40px;
