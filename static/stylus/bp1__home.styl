@@ -86,7 +86,7 @@
 	margin-right gutter
 	margin-left gutter
 .u-bottom__border
-	border-bottom 1px solid divider
+	// border-bottom 1px solid divider
 	padding-bottom 40px
 
 
@@ -158,11 +158,21 @@ body
  * ^main iconography
  */
 .iconography__title
-	padding-bottom 20px
+	padding-bottom 30px
 .iconography__module
 	text-align left
-	margin-top 30px
-	margin-bottom 30px
+.iconography__module--vertical
+	display block
+	margin-top gutter
+	margin-bottom gutter
+	&:first-child
+		margin-top 0
+.iconography__module--horizontal
+	display inline-block
+	margin-right gutter
+.iconography__module--single
+	margin-top (gutter*2)
+	margin-bottom gutter
 .action
 	background-color actionToTake
 	border 1px solid rgba(actionToTake__dark,.1)
@@ -171,8 +181,6 @@ body
 	display inline-block
 	font-size 14px
 	line-height 24px
-	margin-right gutter
-	margin-top gutter
 	padding .7rem 2rem .7rem 1.2rem
 	&:before
 		content '\e604'
@@ -186,8 +194,6 @@ body
 	border-radius 5px
 	color important__dark
 	display inline-block
-	margin-top gutter
-	margin-right gutter
 	padding .7rem 2rem .7rem 1.2rem
 	line-height 24px
 	font-size 14px
@@ -203,7 +209,6 @@ body
 	border-radius 5px
 	color alert__dark
 	display inline-block
-	margin-top gutter
 	padding .7rem 2rem .7rem 1.2rem
 	line-height 24px
 	font-size 14px
@@ -213,9 +218,36 @@ body
 		vertical-align top
 		font-size 18px
 		margin-right (gutter/2)
+.few-tags
+	margin-bottom 30px
+	text-align left
 
 
-/**
+
+
+ /**
+ * ^main ^social
+ */
+.download-button
+	padding-top gutter
+	padding-bottom gutter
+	display inline-block
+	a
+		text-decoration none
+		&:hover
+			opacity .8
+	span
+		border-bottom 3px solid rgba(black,.3)
+		background-color green
+		font-size 15px
+		font-weight bolder
+		color white
+		padding (gutter) (gutter*2.5)
+		border-radius 5px
+
+
+
+ /**
  * ^main ^social
  */
 .social__outer
