@@ -29,6 +29,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/calendar.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 55353,
+		"inputAbbreviatedPath": "\/img\/calendar.jpg",
+		"outputAbbreviatedPath": "\/img\/calendar.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/chart-1.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -36,6 +47,72 @@
 		"initialSize": 54728,
 		"inputAbbreviatedPath": "\/img\/chart-1.png",
 		"outputAbbreviatedPath": "\/img\/chart-1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/fb1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 42719,
+		"inputAbbreviatedPath": "\/img\/fb1.png",
+		"outputAbbreviatedPath": "\/img\/fb1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/fb2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 42991,
+		"inputAbbreviatedPath": "\/img\/fb2.png",
+		"outputAbbreviatedPath": "\/img\/fb2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/fb3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 38124,
+		"inputAbbreviatedPath": "\/img\/fb3.png",
+		"outputAbbreviatedPath": "\/img\/fb3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/fb4.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 44743,
+		"inputAbbreviatedPath": "\/img\/fb4.png",
+		"outputAbbreviatedPath": "\/img\/fb4.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/fb5.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 43079,
+		"inputAbbreviatedPath": "\/img\/fb5.png",
+		"outputAbbreviatedPath": "\/img\/fb5.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/fb6.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 36585,
+		"inputAbbreviatedPath": "\/img\/fb6.png",
+		"outputAbbreviatedPath": "\/img\/fb6.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

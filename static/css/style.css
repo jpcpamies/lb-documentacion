@@ -665,6 +665,12 @@ th {
   font-weight: 400;
   margin-bottom: 8px;
 }
+.body__list--home {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
 .caption {
   font-size: 15px;
   line-height: 24px;
@@ -747,6 +753,14 @@ body {
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
+}
+.recomended {
+  background-color: #eea942;
+  color: #fff;
+  padding: 3px 7px;
+  font-size: 13px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 .iconography__title {
   padding-bottom: 30px;
@@ -857,9 +871,6 @@ body {
 }
 .name {
   margin-bottom: 16px;
-}
-.name span {
-  color: #2bae99;
 }
 .avatar {
   width: 60px;
@@ -1448,6 +1459,9 @@ body {
 .body-module:last-child {
   margin-bottom: 40px;
 }
+.body-text__module {
+  margin-bottom: 32px;
+}
 .note {
   border-left: 5px solid;
   -webkit-border-radius: 3px;
@@ -1468,6 +1482,14 @@ body {
   padding-left: 40px;
   padding-right: 32px;
   text-align: left;
+}
+.note__list--second {
+  padding-top: 8px;
+  padding-left: 16px;
+}
+.note__list--third {
+  padding-top: 8px;
+  padding-left: 16px;
 }
 .body-text__note {
   margin-bottom: 0;
@@ -1561,7 +1583,7 @@ body {
   text-align: left;
 }
 .caption__list {
-  margin-top: 16px;
+  margin-top: 8px;
 }
 @media only screen and (min-width: 760px) {
   .display1 {
@@ -1610,6 +1632,7 @@ body {
   .figure__small {
     margin-right: 40px;
     margin-bottom: 0;
+    vertical-align: top;
   }
   .figure__small:nth-child(even) {
     margin-right: 0;
